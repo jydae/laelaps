@@ -1,0 +1,134 @@
+{
+ "data": [
+  {
+   "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890",
+   "Properties": {
+    "domain": "PRYORHALE.LOCAL",
+    "name": "PRYORHALE.LOCAL",
+    "distinguishedname": "DC=pryorhale,DC=local",
+    "domainsid": "S-1-5-21-2286421305-1841789134-3517623890",
+    "description": "Pryor & Hale Engineering Ltd \u2014 production forest root.",
+    "functionallevel": "2016",
+    "whencreated": 1297674000,
+    "highvalue": true,
+    "collected": true,
+    "isaclprotected": false
+   },
+   "Trusts": [],
+   "ChildObjects": [],
+   "GPOChanges": {
+    "LocalAdmins": [],
+    "RemoteDesktopUsers": [],
+    "DcomUsers": [],
+    "PSRemoteUsers": [],
+    "AffectedComputers": []
+   },
+   "Links": [
+    {
+     "IsEnforced": false,
+     "GUID": "406756D8-DD74-452A-9807-4687FD958193"
+    }
+   ],
+   "Aces": [
+    {
+     "PrincipalSID": "S-1-5-21-2286421305-1841789134-3517623890-512",
+     "PrincipalType": "Group",
+     "RightName": "GenericAll",
+     "IsInherited": false
+    },
+    {
+     "PrincipalSID": "S-1-5-21-2286421305-1841789134-3517623890-519",
+     "PrincipalType": "Group",
+     "RightName": "GenericAll",
+     "IsInherited": false
+    },
+    {
+     "PrincipalSID": "PRYORHALE.LOCAL-S-1-5-32-544",
+     "PrincipalType": "Group",
+     "RightName": "WriteDacl",
+     "IsInherited": false
+    },
+    {
+     "PrincipalSID": "PRYORHALE.LOCAL-S-1-5-32-544",
+     "PrincipalType": "Group",
+     "RightName": "WriteOwner",
+     "IsInherited": false
+    },
+    {
+     "PrincipalSID": "PRYORHALE.LOCAL-S-1-5-32-544",
+     "PrincipalType": "Group",
+     "RightName": "GenericAll",
+     "IsInherited": false
+    },
+    {
+     "PrincipalSID": "S-1-5-21-2286421305-1841789134-3517623890-512",
+     "PrincipalType": "Group",
+     "RightName": "Owns",
+     "IsInherited": false
+    },
+    {
+     "PrincipalSID": "S-1-5-21-2286421305-1841789134-3517623890-516",
+     "PrincipalType": "Group",
+     "RightName": "GetChanges",
+     "IsInherited": false
+    },
+    {
+     "PrincipalSID": "S-1-5-21-2286421305-1841789134-3517623890-516",
+     "PrincipalType": "Group",
+     "RightName": "GetChangesAll",
+     "IsInherited": false
+    },
+    {
+     "PrincipalSID": "PRYORHALE.LOCAL-S-1-5-9",
+     "PrincipalType": "Group",
+     "RightName": "GetChanges",
+     "IsInherited": false
+    },
+    {
+     "PrincipalSID": "PRYORHALE.LOCAL-S-1-5-9",
+     "PrincipalType": "Group",
+     "RightName": "GetChangesAll",
+     "IsInherited": false
+    },
+    {
+     "PrincipalSID": "S-1-5-21-2286421305-1841789134-3517623890-512",
+     "PrincipalType": "Group",
+     "RightName": "GetChanges",
+     "IsInherited": false
+    },
+    {
+     "PrincipalSID": "S-1-5-21-2286421305-1841789134-3517623890-512",
+     "PrincipalType": "Group",
+     "RightName": "GetChangesAll",
+     "IsInherited": false
+    },
+    {
+     "PrincipalSID": "S-1-5-21-2286421305-1841789134-3517623890-519",
+     "PrincipalType": "Group",
+     "RightName": "GetChanges",
+     "IsInherited": false
+    },
+    {
+     "PrincipalSID": "S-1-5-21-2286421305-1841789134-3517623890-519",
+     "PrincipalType": "Group",
+     "RightName": "GetChangesAll",
+     "IsInherited": false
+    },
+    {
+     "PrincipalSID": "S-1-5-21-2286421305-1841789134-3517623890-519",
+     "PrincipalType": "Group",
+     "RightName": "GetChangesInFilteredSet",
+     "IsInherited": false
+    }
+   ],
+   "IsDeleted": false,
+   "IsACLProtected": false
+  }
+ ],
+ "meta": {
+  "methods": 1046527,
+  "type": "domains",
+  "count": 1,
+  "version": 6
+ }
+}

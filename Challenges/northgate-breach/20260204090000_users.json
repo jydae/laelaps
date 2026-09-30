@@ -1,0 +1,325 @@
+{
+  "data": [
+    {
+      "ObjectIdentifier": "S-1-5-21-4187502233-2849013567-771402918-1101",
+      "Properties": {
+        "name": "DECLAN.MARSH@NORTHGATE.LOCAL",
+        "domain": "NORTHGATE.LOCAL",
+        "domainsid": "S-1-5-21-4187502233-2849013567-771402918",
+        "distinguishedname": "CN=DECLAN.MARSH,OU=STAFF,DC=NORTHGATE,DC=LOCAL",
+        "enabled": true,
+        "admincount": false,
+        "unconstraineddelegation": false,
+        "description": "External contractor, data-pipeline support (Contoso Consulting). Laptop phished 3 Feb; password reset same day."
+      },
+      "Aces": [],
+      "ContainedBy": {
+        "ObjectIdentifier": "A1A10000-0000-0000-0000-0000000000OU",
+        "ObjectType": "OU"
+      },
+      "PrimaryGroupSID": "S-1-5-21-4187502233-2849013567-771402918-513",
+      "HasSIDHistory": [],
+      "AllowedToDelegate": []
+    },
+    {
+      "ObjectIdentifier": "S-1-5-21-4187502233-2849013567-771402918-1201",
+      "Properties": {
+        "name": "REPORTS.SVC@NORTHGATE.LOCAL",
+        "domain": "NORTHGATE.LOCAL",
+        "domainsid": "S-1-5-21-4187502233-2849013567-771402918",
+        "distinguishedname": "CN=REPORTS.SVC,OU=STAFF,DC=NORTHGATE,DC=LOCAL",
+        "enabled": true,
+        "admincount": false,
+        "unconstraineddelegation": false,
+        "description": "Automated weekly reporting job. SPN last rotated 2019."
+      },
+      "Aces": [
+        {
+          "PrincipalSID": "S-1-5-21-4187502233-2849013567-771402918-1101",
+          "PrincipalType": "User",
+          "RightName": "WriteSPN",
+          "IsInherited": false
+        }
+      ],
+      "ContainedBy": {
+        "ObjectIdentifier": "A2A20000-0000-0000-0000-0000000000OU",
+        "ObjectType": "OU"
+      },
+      "PrimaryGroupSID": "S-1-5-21-4187502233-2849013567-771402918-513",
+      "HasSIDHistory": [],
+      "AllowedToDelegate": []
+    },
+    {
+      "ObjectIdentifier": "S-1-5-21-4187502233-2849013567-771402918-1202",
+      "Properties": {
+        "name": "GMSA-ETL$@NORTHGATE.LOCAL",
+        "domain": "NORTHGATE.LOCAL",
+        "domainsid": "S-1-5-21-4187502233-2849013567-771402918",
+        "distinguishedname": "CN=GMSA-ETL$,OU=STAFF,DC=NORTHGATE,DC=LOCAL",
+        "enabled": true,
+        "admincount": false,
+        "unconstraineddelegation": false,
+        "description": "Managed service account for the nightly ETL pipeline."
+      },
+      "Aces": [
+        {
+          "PrincipalSID": "S-1-5-21-4187502233-2849013567-771402918-1401",
+          "PrincipalType": "Group",
+          "RightName": "ReadGMSAPassword",
+          "IsInherited": false
+        }
+      ],
+      "ContainedBy": {
+        "ObjectIdentifier": "A2A20000-0000-0000-0000-0000000000OU",
+        "ObjectType": "OU"
+      },
+      "PrimaryGroupSID": "S-1-5-21-4187502233-2849013567-771402918-513",
+      "HasSIDHistory": [],
+      "AllowedToDelegate": []
+    },
+    {
+      "ObjectIdentifier": "S-1-5-21-4187502233-2849013567-771402918-1102",
+      "Properties": {
+        "name": "MARCUS.OYELARAN@NORTHGATE.LOCAL",
+        "domain": "NORTHGATE.LOCAL",
+        "domainsid": "S-1-5-21-4187502233-2849013567-771402918",
+        "distinguishedname": "CN=MARCUS.OYELARAN,OU=STAFF,DC=NORTHGATE,DC=LOCAL",
+        "enabled": true,
+        "admincount": false,
+        "unconstraineddelegation": false,
+        "description": "Senior Platform Engineer, Infrastructure. Owns the release tooling."
+      },
+      "Aces": [],
+      "ContainedBy": {
+        "ObjectIdentifier": "A2A20000-0000-0000-0000-0000000000OU",
+        "ObjectType": "OU"
+      },
+      "PrimaryGroupSID": "S-1-5-21-4187502233-2849013567-771402918-513",
+      "HasSIDHistory": [],
+      "AllowedToDelegate": []
+    },
+    {
+      "ObjectIdentifier": "S-1-5-21-4187502233-2849013567-771402918-1103",
+      "Properties": {
+        "name": "PRIYA.DESAI@NORTHGATE.LOCAL",
+        "domain": "NORTHGATE.LOCAL",
+        "domainsid": "S-1-5-21-4187502233-2849013567-771402918",
+        "distinguishedname": "CN=PRIYA.DESAI,OU=STAFF,DC=NORTHGATE,DC=LOCAL",
+        "enabled": true,
+        "admincount": false,
+        "unconstraineddelegation": false,
+        "description": "Release Engineer. Ships the Friday deploy train."
+      },
+      "Aces": [],
+      "ContainedBy": {
+        "ObjectIdentifier": "A3A30000-0000-0000-0000-0000000000OU",
+        "ObjectType": "OU"
+      },
+      "PrimaryGroupSID": "S-1-5-21-4187502233-2849013567-771402918-513",
+      "HasSIDHistory": [],
+      "AllowedToDelegate": []
+    },
+    {
+      "ObjectIdentifier": "S-1-5-21-4187502233-2849013567-771402918-1204",
+      "Properties": {
+        "name": "BREAKGLASS.OPS@NORTHGATE.LOCAL",
+        "domain": "NORTHGATE.LOCAL",
+        "domainsid": "S-1-5-21-4187502233-2849013567-771402918",
+        "distinguishedname": "CN=BREAKGLASS.OPS,OU=STAFF,DC=NORTHGATE,DC=LOCAL",
+        "enabled": true,
+        "admincount": false,
+        "unconstraineddelegation": false,
+        "description": "Emergency operations account, used only during declared incidents."
+      },
+      "Aces": [
+        {
+          "PrincipalSID": "S-1-5-21-4187502233-2849013567-771402918-1103",
+          "PrincipalType": "User",
+          "RightName": "ForceChangePassword",
+          "IsInherited": false
+        }
+      ],
+      "ContainedBy": {
+        "ObjectIdentifier": "A2A20000-0000-0000-0000-0000000000OU",
+        "ObjectType": "OU"
+      },
+      "PrimaryGroupSID": "S-1-5-21-4187502233-2849013567-771402918-513",
+      "HasSIDHistory": [],
+      "AllowedToDelegate": []
+    },
+    {
+      "ObjectIdentifier": "S-1-5-21-4187502233-2849013567-771402918-500",
+      "Properties": {
+        "name": "ADMINISTRATOR@NORTHGATE.LOCAL",
+        "domain": "NORTHGATE.LOCAL",
+        "domainsid": "S-1-5-21-4187502233-2849013567-771402918",
+        "distinguishedname": "CN=ADMINISTRATOR,OU=STAFF,DC=NORTHGATE,DC=LOCAL",
+        "enabled": true,
+        "admincount": false,
+        "unconstraineddelegation": false,
+        "description": "Built-in administrator (RID 500)."
+      },
+      "Aces": [],
+      "ContainedBy": {
+        "ObjectIdentifier": "A2A20000-0000-0000-0000-0000000000OU",
+        "ObjectType": "OU"
+      },
+      "PrimaryGroupSID": "S-1-5-21-4187502233-2849013567-771402918-513",
+      "HasSIDHistory": [],
+      "AllowedToDelegate": []
+    },
+    {
+      "ObjectIdentifier": "S-1-5-21-4187502233-2849013567-771402918-502",
+      "Properties": {
+        "name": "KRBTGT@NORTHGATE.LOCAL",
+        "domain": "NORTHGATE.LOCAL",
+        "domainsid": "S-1-5-21-4187502233-2849013567-771402918",
+        "distinguishedname": "CN=KRBTGT,OU=STAFF,DC=NORTHGATE,DC=LOCAL",
+        "enabled": true,
+        "admincount": false,
+        "unconstraineddelegation": false,
+        "description": "krbtgt (RID 502)."
+      },
+      "Aces": [],
+      "ContainedBy": {
+        "ObjectIdentifier": "A2A20000-0000-0000-0000-0000000000OU",
+        "ObjectType": "OU"
+      },
+      "PrimaryGroupSID": "S-1-5-21-4187502233-2849013567-771402918-513",
+      "HasSIDHistory": [],
+      "AllowedToDelegate": []
+    },
+    {
+      "ObjectIdentifier": "S-1-5-21-4187502233-2849013567-771402918-1500",
+      "Properties": {
+        "name": "OKAFOR.T@NORTHGATE.LOCAL",
+        "domain": "NORTHGATE.LOCAL",
+        "domainsid": "S-1-5-21-4187502233-2849013567-771402918",
+        "distinguishedname": "CN=OKAFOR.T,OU=STAFF,DC=NORTHGATE,DC=LOCAL",
+        "enabled": true,
+        "admincount": false,
+        "unconstraineddelegation": false,
+        "description": "Ordinary staff account."
+      },
+      "Aces": [],
+      "ContainedBy": {
+        "ObjectIdentifier": "A2A20000-0000-0000-0000-0000000000OU",
+        "ObjectType": "OU"
+      },
+      "PrimaryGroupSID": "S-1-5-21-4187502233-2849013567-771402918-513",
+      "HasSIDHistory": [],
+      "AllowedToDelegate": []
+    },
+    {
+      "ObjectIdentifier": "S-1-5-21-4187502233-2849013567-771402918-1501",
+      "Properties": {
+        "name": "LINDQVIST.A@NORTHGATE.LOCAL",
+        "domain": "NORTHGATE.LOCAL",
+        "domainsid": "S-1-5-21-4187502233-2849013567-771402918",
+        "distinguishedname": "CN=LINDQVIST.A,OU=STAFF,DC=NORTHGATE,DC=LOCAL",
+        "enabled": true,
+        "admincount": false,
+        "unconstraineddelegation": false,
+        "description": "Ordinary staff account."
+      },
+      "Aces": [],
+      "ContainedBy": {
+        "ObjectIdentifier": "A2A20000-0000-0000-0000-0000000000OU",
+        "ObjectType": "OU"
+      },
+      "PrimaryGroupSID": "S-1-5-21-4187502233-2849013567-771402918-513",
+      "HasSIDHistory": [],
+      "AllowedToDelegate": []
+    },
+    {
+      "ObjectIdentifier": "S-1-5-21-4187502233-2849013567-771402918-1502",
+      "Properties": {
+        "name": "NAKAMURA.R@NORTHGATE.LOCAL",
+        "domain": "NORTHGATE.LOCAL",
+        "domainsid": "S-1-5-21-4187502233-2849013567-771402918",
+        "distinguishedname": "CN=NAKAMURA.R,OU=STAFF,DC=NORTHGATE,DC=LOCAL",
+        "enabled": true,
+        "admincount": false,
+        "unconstraineddelegation": false,
+        "description": "Ordinary staff account."
+      },
+      "Aces": [],
+      "ContainedBy": {
+        "ObjectIdentifier": "A2A20000-0000-0000-0000-0000000000OU",
+        "ObjectType": "OU"
+      },
+      "PrimaryGroupSID": "S-1-5-21-4187502233-2849013567-771402918-513",
+      "HasSIDHistory": [],
+      "AllowedToDelegate": []
+    },
+    {
+      "ObjectIdentifier": "S-1-5-21-4187502233-2849013567-771402918-1503",
+      "Properties": {
+        "name": "FERREIRA.J@NORTHGATE.LOCAL",
+        "domain": "NORTHGATE.LOCAL",
+        "domainsid": "S-1-5-21-4187502233-2849013567-771402918",
+        "distinguishedname": "CN=FERREIRA.J,OU=STAFF,DC=NORTHGATE,DC=LOCAL",
+        "enabled": true,
+        "admincount": false,
+        "unconstraineddelegation": false,
+        "description": "Ordinary staff account."
+      },
+      "Aces": [],
+      "ContainedBy": {
+        "ObjectIdentifier": "A2A20000-0000-0000-0000-0000000000OU",
+        "ObjectType": "OU"
+      },
+      "PrimaryGroupSID": "S-1-5-21-4187502233-2849013567-771402918-513",
+      "HasSIDHistory": [],
+      "AllowedToDelegate": []
+    },
+    {
+      "ObjectIdentifier": "S-1-5-21-4187502233-2849013567-771402918-1504",
+      "Properties": {
+        "name": "ABIODUN.K@NORTHGATE.LOCAL",
+        "domain": "NORTHGATE.LOCAL",
+        "domainsid": "S-1-5-21-4187502233-2849013567-771402918",
+        "distinguishedname": "CN=ABIODUN.K,OU=STAFF,DC=NORTHGATE,DC=LOCAL",
+        "enabled": true,
+        "admincount": false,
+        "unconstraineddelegation": false,
+        "description": "Ordinary staff account."
+      },
+      "Aces": [],
+      "ContainedBy": {
+        "ObjectIdentifier": "A2A20000-0000-0000-0000-0000000000OU",
+        "ObjectType": "OU"
+      },
+      "PrimaryGroupSID": "S-1-5-21-4187502233-2849013567-771402918-513",
+      "HasSIDHistory": [],
+      "AllowedToDelegate": []
+    },
+    {
+      "ObjectIdentifier": "S-1-5-21-4187502233-2849013567-771402918-1505",
+      "Properties": {
+        "name": "SORENSEN.P@NORTHGATE.LOCAL",
+        "domain": "NORTHGATE.LOCAL",
+        "domainsid": "S-1-5-21-4187502233-2849013567-771402918",
+        "distinguishedname": "CN=SORENSEN.P,OU=STAFF,DC=NORTHGATE,DC=LOCAL",
+        "enabled": true,
+        "admincount": false,
+        "unconstraineddelegation": false,
+        "description": "Ordinary staff account."
+      },
+      "Aces": [],
+      "ContainedBy": {
+        "ObjectIdentifier": "A2A20000-0000-0000-0000-0000000000OU",
+        "ObjectType": "OU"
+      },
+      "PrimaryGroupSID": "S-1-5-21-4187502233-2849013567-771402918-513",
+      "HasSIDHistory": [],
+      "AllowedToDelegate": []
+    }
+  ],
+  "meta": {
+    "type": "users",
+    "count": 14,
+    "version": 6,
+    "methods": 0
+  }
+}

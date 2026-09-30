@@ -1,0 +1,150 @@
+{
+ "id": "northgate-breach",
+ "title": "The Contractor's Laptop",
+ "difficulty": "hard",
+ "blurb": "IT closed the incident the day it happened. Nobody asked how far it could have gone.",
+ "brief": "On 3 February a contractor's laptop was phished. IT reset the password within the hour and closed the ticket: contained. Three weeks later, during an unrelated access review, someone asks the question the ticket never did. Not what the attacker DID, because nothing else was logged, but what they COULD have done with that one account and nothing else: no zero-day, no tool, just the rights already sitting on the directory. You are the reviewer. Declan Marsh, the contractor, is where it starts.",
+ "start": "find users named \"DECLAN.MARSH\"",
+ "epilogue": "Ten ordinary rights, each one defensible on its own. A contractor who can reset a stale service account's SPN. A service account allowed to add itself to a working group. A working group that can read one gMSA's password because a pipeline once needed it to. A gMSA holding a delegation write on a build host nobody re-reviewed after the migration. A senior engineer's session left resident on that host. That engineer's blanket control over his own team's OU, granted in 2021 and never revisited. The one account inside it. Its access to reset a break-glass credential, because break-glass credentials have to be resettable by someone. And the break-glass account's seat on an incident-response group that, for exactly the reason its name suggests, can pull a full copy of the directory when things are on fire. Nobody signed off on 'contractor to Domain Admins.' Ten different people signed off on ten different small things, on ten different days, for ten different reasons that each made sense. That is the finding: not a misconfiguration, a chain.",
+ "files": [
+  "20260204090000_domains.json",
+  "20260204090000_containers.json",
+  "20260204090000_ous.json",
+  "20260204090000_gpos.json",
+  "20260204090000_groups.json",
+  "20260204090000_computers.json",
+  "20260204090000_users.json"
+ ],
+ "questions": [
+  {
+   "ask": "Start with the domain itself. What is its name?",
+   "hints": [
+    {
+     "technique": "The domain object",
+     "text": "Every dump has one Domain object. Pick the database on the Graph tab and open the Domain panel, or `find domains`."
+    }
+   ],
+   "answers": [
+    "6b7e67256d7cbf982f5b07913a879f070e906b294a738a1c360114e1ca91af97",
+    "c252c99dc7f6d49d3faa4a43643cc55e3149534c2ddfcf12549d13284a7d2542"
+   ]
+  },
+  {
+   "ask": "Declan Marsh was never full-time. Which OU holds the contractor accounts?",
+   "hints": [
+    {
+     "technique": "Organisational units",
+     "text": "`find ous` lists every OU; each one's description says what it holds."
+    }
+   ],
+   "answers": [
+    "f04ee782287cc0c7ced73b507481fcaf8215d72d5e75e1609b42dd8a405e3e9b"
+   ]
+  },
+  {
+   "ask": "Right-click Declan Marsh and mark him owned. A new row appears under ROUTES FROM OWNED. How many steps does it list?",
+   "hints": [
+    {
+     "technique": "Routes from owned",
+     "text": "Marking an object owned adds a row to the panel's own top section, above the filters. The note reads \"N steps: …\"; open the row to see them counted out underneath."
+    }
+   ],
+   "answers": [
+    "4a44dc15364204a80fe80e9039455cc1608281820fe2b24f1e5233ade6af1dd5",
+    "e4432baa90819aaef51d2a7f8e148bf7e679610f3173752fabb4dcb2d0f418d3"
+   ]
+  },
+  {
+   "ask": "Open the route. What is the first account it reaches?",
+   "hints": [
+    {
+     "technique": "Reading the steps",
+     "text": "Each line reads From / edge / To. The first line starts at Declan."
+    }
+   ],
+   "answers": [
+    "4992c37218533a2df3ca532444f7702320aecc4a34abde39c7e417f29b189b75",
+    "fe95a4ccc6529bac3df5efa4e4b6f32d459261db9ff28dfb24bb69519f58b99f"
+   ]
+  },
+  {
+   "ask": "What technique does the panel name for that first step?",
+   "hints": [
+    {
+     "technique": "Credential primitives",
+     "text": "The technique sits at the right of the step. It is a way of forcing a ticket that can be cracked offline, and it is why an SPN nobody rotates is worth finding."
+    }
+   ],
+   "answers": [
+    "fc88ea33faec63081800e20d5b5cdd0186d5a25c4869ee06103686a7a02e4a81",
+    "2134d2df9dad63fa67d404cf69f2dd4070b4a2f660b121a51d81505df3b24f33"
+   ]
+  },
+  {
+   "ask": "The compromised service account can put itself into one group with a single right. Name the group.",
+   "hints": [
+    {
+     "technique": "Group control",
+     "text": "Step two. The right is AddSelf: the account adds itself, no approval asked."
+    }
+   ],
+   "answers": [
+    "0f9c7c732faedd3a6a4e55d58cec5eaf62f6c47e4cddb81115b6dba990980db2",
+    "14c2b78b316ab76ddacd24822a1d5f0f81e1c233a42320c79f4eb9449a186c7f"
+   ]
+  },
+  {
+   "ask": "From that group, one managed account's password is readable. Name the account.",
+   "hints": [
+    {
+     "technique": "Credential primitives",
+     "text": "Step three, ReadGMSAPassword. A gMSA's password is stored for whoever the directory says may read it."
+    }
+   ],
+   "answers": [
+    "524d9b268672ee33c6786ecad9846a6bf21462e6cf1e728b01e38b946340626b",
+    "40a233140f89ed3f9cb828ae1a11aeebb7ff69066b646bcfa5f5124dbea2d3a2",
+    "a52aa84ca82b7027b8c09fe545d02940c9abbe75e35683ae2f1784b3b6827a46"
+   ]
+  },
+  {
+   "ask": "That account can hand its holder a build host by rewriting one delegation attribute. Which host?",
+   "hints": [
+    {
+     "technique": "Delegation",
+     "text": "Step four, resource-based constrained delegation: a write, not a use. The next step is a session already sitting on the host this unlocks."
+    }
+   ],
+   "answers": [
+    "2814ac79cf0e2aba6a11f509bed49e58964bfe8dcd49afce954ae0c4861b83f2",
+    "c0cf7181a7fbf980c65918e1274b035f4e9204736779a6f655a0e13480b0ba00"
+   ]
+  },
+  {
+   "ask": "Whose session is resident on that host, the account the compromise yields once the host is taken?",
+   "hints": [
+    {
+     "technique": "Lateral movement",
+     "text": "Step five, HasSession. The direction a real compromise runs is host to account, never the other way."
+    }
+   ],
+   "answers": [
+    "0f49f8d63784efe6cbef253317f9ba2a2bf88d3e1a75469bc64074a9e1049c7a",
+    "a8bdd20dcad3aacf1c588b2700a250c6c994a88487c2a325d085760c4c061cbc"
+   ]
+  },
+  {
+   "ask": "Which group ultimately holds the right that reaches NORTHGATE.LOCAL itself, the last stop before the domain?",
+   "hints": [
+    {
+     "technique": "Directory replication",
+     "text": "The final step. Two rights, neither one enough alone, held together by one group. That composition is what the panel calls DCSync."
+    }
+   ],
+   "answers": [
+    "1332a283e740716f2b37eea7174a76651dbc5a8e41964a6c06c8cc6d40b47c6a",
+    "30c53c2966346c405f4d429a2eedeca0528e8a6a7ab8fa8f9e1a7188a2f8fa01"
+   ]
+  }
+ ]
+}

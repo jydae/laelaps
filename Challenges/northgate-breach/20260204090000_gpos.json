@@ -1,0 +1,24 @@
+{
+  "data": [
+    {
+      "ObjectIdentifier": "B1B10000-0000-0000-0000-000000000GPO",
+      "Properties": {
+        "name": "NORTHGATE-BASELINE@NORTHGATE.LOCAL",
+        "domain": "NORTHGATE.LOCAL",
+        "domainsid": "S-1-5-21-4187502233-2849013567-771402918",
+        "distinguishedname": "CN={B1B10000},CN=POLICIES,DC=NORTHGATE,DC=LOCAL"
+      },
+      "Aces": [],
+      "ContainedBy": {
+        "ObjectIdentifier": "S-1-5-21-4187502233-2849013567-771402918",
+        "ObjectType": "Domain"
+      }
+    }
+  ],
+  "meta": {
+    "type": "gpos",
+    "count": 1,
+    "version": 6,
+    "methods": 0
+  }
+}

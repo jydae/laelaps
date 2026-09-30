@@ -1,0 +1,89 @@
+:root {
+
+  --logo-marble: #ede4d3;
+  --logo-marble-light: #faf6ee;
+  --logo-marble-shade: #a99a89;
+  --logo-oxblood: #7a1f14;
+  --logo-oxblood-light: #9a2c1d;
+  --logo-oxblood-shade: #4a160e;
+
+  --panel-min: 420px;
+  --panel-max: 630px;
+  --panel-w: var(--panel-min);
+
+  --panel-w-right: calc(var(--panel-min) * 1.05);
+
+  --topbar-h: 57px;
+  --panel-top: var(--page-bottom);
+
+  --zoom: 1;
+  --viewport-h: calc(100vh / var(--zoom));
+
+  --motif-rest: 0.16;
+  --viewport-w: calc(100vw / var(--zoom));
+
+  --rim-w: 1px;
+  --menu-pad: 4px;
+
+  --z-content: 10;
+  --z-overlay: 20;
+  --z-menu: 30;
+  --z-cursor: 40;
+
+  --t: 100ms;
+  --t-3: 300ms;
+  --ease: cubic-bezier(0.4, 1, 0.75, 0.9);
+
+  --t-micro: 10.5px;
+  --t-small: 12px;
+  --t-body: 13px;
+  --t-lead: 16.5px;
+  --t-figure: 26px;
+
+  --sans: "D-DIN", -apple-system, "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+  --mono: "D-DIN Tabular", "D-DIN", ui-monospace, monospace;
+  --condensed: "D-DIN Condensed", var(--sans);
+
+  --display: "Gloock", "Bodoni Moda", "Didot", Georgia, serif;
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+
+  --w-content: 1920px;
+
+  --gutter: clamp(24px, calc(0.034 * var(--viewport-w)), 70px);
+  --page-bottom: 36px;
+}
+
+:root {
+  --paint-red: #ff4438;
+  --paint-orange: #ff9a1a;
+  --paint-yellow: #f0d040;
+  --paint-green: #2fd8a8;
+  --paint-camo: #9aa861;
+  --paint-cyan: #2fb8f0;
+  --paint-violet: #6f8ff8;
+  --paint-magenta: #ff4fb0;
+}
+
+:root {
+  --k-user: #e8eef0;
+  --k-domain: #ff4fb0;
+  --k-computer: #2fb8f0;
+  --k-group: #ff9a1a;
+  --k-ou: #2fd8a8;
+  --k-gpo: #f0d040;
+  --k-certtemplate: #8fe070;
+  --k-ntauthstore: #30e8d8;
+  --k-issuancepolicy: #6f8ff8;
+  --k-enterpriseca: #f0a030;
+  --k-rootca: #f07858;
+  --k-aiaca: #c89878;
+  --k-container: #93a2aa;
+  --k-base: #8e9ca6;
+}

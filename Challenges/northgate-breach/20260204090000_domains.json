@@ -1,0 +1,42 @@
+{
+  "data": [
+    {
+      "ObjectIdentifier": "S-1-5-21-4187502233-2849013567-771402918",
+      "Properties": {
+        "name": "NORTHGATE.LOCAL",
+        "domain": "NORTHGATE.LOCAL",
+        "domainsid": "S-1-5-21-4187502233-2849013567-771402918",
+        "distinguishedname": "DC=NORTHGATE,DC=LOCAL",
+        "functionallevel": "2016"
+      },
+      "Aces": [
+        {
+          "PrincipalSID": "S-1-5-21-4187502233-2849013567-771402918-1402",
+          "PrincipalType": "Group",
+          "RightName": "GetChanges",
+          "IsInherited": false
+        },
+        {
+          "PrincipalSID": "S-1-5-21-4187502233-2849013567-771402918-1402",
+          "PrincipalType": "Group",
+          "RightName": "GetChangesAll",
+          "IsInherited": false
+        }
+      ],
+      "Trusts": [],
+      "Links": [
+        {
+          "GUID": "B1B10000-0000-0000-0000-000000000GPO",
+          "IsEnforced": false
+        }
+      ],
+      "ChildObjects": []
+    }
+  ],
+  "meta": {
+    "type": "domains",
+    "count": 1,
+    "version": 6,
+    "methods": 0
+  }
+}

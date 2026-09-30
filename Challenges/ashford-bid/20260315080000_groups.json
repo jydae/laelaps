@@ -1,0 +1,2172 @@
+{
+ "data": [
+  {
+   "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-512",
+   "Properties": {
+    "domain": "PRYORHALE.LOCAL",
+    "name": "DOMAIN ADMINS@PRYORHALE.LOCAL",
+    "distinguishedname": "CN=Domain Admins,CN=Users,DC=pryorhale,DC=local",
+    "domainsid": "S-1-5-21-2286421305-1841789134-3517623890",
+    "samaccountname": "Domain Admins",
+    "description": "Designated administrators of the domain",
+    "admincount": true,
+    "whencreated": 1297675800,
+    "highvalue": true
+   },
+   "Members": [
+    {
+     "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1120",
+     "ObjectType": "User"
+    }
+   ],
+   "ContainedBy": {
+    "ObjectIdentifier": "FF989767-4A0F-40EE-877C-48BD82C4A301",
+    "ObjectType": "Container"
+   },
+   "Aces": [
+    {
+     "PrincipalSID": "S-1-5-21-2286421305-1841789134-3517623890-512",
+     "PrincipalType": "Group",
+     "RightName": "GenericAll",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "S-1-5-21-2286421305-1841789134-3517623890-519",
+     "PrincipalType": "Group",
+     "RightName": "GenericAll",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "PRYORHALE.LOCAL-S-1-5-32-544",
+     "PrincipalType": "Group",
+     "RightName": "WriteDacl",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "PRYORHALE.LOCAL-S-1-5-32-544",
+     "PrincipalType": "Group",
+     "RightName": "WriteOwner",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "PRYORHALE.LOCAL-S-1-5-32-544",
+     "PrincipalType": "Group",
+     "RightName": "GenericAll",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "S-1-5-21-2286421305-1841789134-3517623890-512",
+     "PrincipalType": "Group",
+     "RightName": "Owns",
+     "IsInherited": false
+    }
+   ],
+   "IsDeleted": false,
+   "IsACLProtected": true
+  },
+  {
+   "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-513",
+   "Properties": {
+    "domain": "PRYORHALE.LOCAL",
+    "name": "DOMAIN USERS@PRYORHALE.LOCAL",
+    "distinguishedname": "CN=Domain Users,CN=Users,DC=pryorhale,DC=local",
+    "domainsid": "S-1-5-21-2286421305-1841789134-3517623890",
+    "samaccountname": "Domain Users",
+    "description": "All domain users",
+    "admincount": false,
+    "whencreated": 1297675800,
+    "highvalue": false
+   },
+   "Members": [],
+   "ContainedBy": {
+    "ObjectIdentifier": "FF989767-4A0F-40EE-877C-48BD82C4A301",
+    "ObjectType": "Container"
+   },
+   "Aces": [
+    {
+     "PrincipalSID": "S-1-5-21-2286421305-1841789134-3517623890-512",
+     "PrincipalType": "Group",
+     "RightName": "GenericAll",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "S-1-5-21-2286421305-1841789134-3517623890-519",
+     "PrincipalType": "Group",
+     "RightName": "GenericAll",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "PRYORHALE.LOCAL-S-1-5-32-544",
+     "PrincipalType": "Group",
+     "RightName": "WriteDacl",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "PRYORHALE.LOCAL-S-1-5-32-544",
+     "PrincipalType": "Group",
+     "RightName": "WriteOwner",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "PRYORHALE.LOCAL-S-1-5-32-544",
+     "PrincipalType": "Group",
+     "RightName": "GenericAll",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "S-1-5-21-2286421305-1841789134-3517623890-512",
+     "PrincipalType": "Group",
+     "RightName": "Owns",
+     "IsInherited": false
+    }
+   ],
+   "IsDeleted": false,
+   "IsACLProtected": false
+  },
+  {
+   "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-515",
+   "Properties": {
+    "domain": "PRYORHALE.LOCAL",
+    "name": "DOMAIN COMPUTERS@PRYORHALE.LOCAL",
+    "distinguishedname": "CN=Domain Computers,CN=Users,DC=pryorhale,DC=local",
+    "domainsid": "S-1-5-21-2286421305-1841789134-3517623890",
+    "samaccountname": "Domain Computers",
+    "description": "All workstations and servers joined to the domain",
+    "admincount": false,
+    "whencreated": 1297675800,
+    "highvalue": false
+   },
+   "Members": [],
+   "ContainedBy": {
+    "ObjectIdentifier": "FF989767-4A0F-40EE-877C-48BD82C4A301",
+    "ObjectType": "Container"
+   },
+   "Aces": [
+    {
+     "PrincipalSID": "S-1-5-21-2286421305-1841789134-3517623890-512",
+     "PrincipalType": "Group",
+     "RightName": "GenericAll",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "S-1-5-21-2286421305-1841789134-3517623890-519",
+     "PrincipalType": "Group",
+     "RightName": "GenericAll",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "PRYORHALE.LOCAL-S-1-5-32-544",
+     "PrincipalType": "Group",
+     "RightName": "WriteDacl",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "PRYORHALE.LOCAL-S-1-5-32-544",
+     "PrincipalType": "Group",
+     "RightName": "WriteOwner",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "PRYORHALE.LOCAL-S-1-5-32-544",
+     "PrincipalType": "Group",
+     "RightName": "GenericAll",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "S-1-5-21-2286421305-1841789134-3517623890-512",
+     "PrincipalType": "Group",
+     "RightName": "Owns",
+     "IsInherited": false
+    }
+   ],
+   "IsDeleted": false,
+   "IsACLProtected": false
+  },
+  {
+   "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-516",
+   "Properties": {
+    "domain": "PRYORHALE.LOCAL",
+    "name": "DOMAIN CONTROLLERS@PRYORHALE.LOCAL",
+    "distinguishedname": "CN=Domain Controllers,CN=Users,DC=pryorhale,DC=local",
+    "domainsid": "S-1-5-21-2286421305-1841789134-3517623890",
+    "samaccountname": "Domain Controllers",
+    "description": "All domain controllers in the domain",
+    "admincount": true,
+    "whencreated": 1297675800,
+    "highvalue": true
+   },
+   "Members": [],
+   "ContainedBy": {
+    "ObjectIdentifier": "FF989767-4A0F-40EE-877C-48BD82C4A301",
+    "ObjectType": "Container"
+   },
+   "Aces": [
+    {
+     "PrincipalSID": "S-1-5-21-2286421305-1841789134-3517623890-512",
+     "PrincipalType": "Group",
+     "RightName": "GenericAll",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "S-1-5-21-2286421305-1841789134-3517623890-519",
+     "PrincipalType": "Group",
+     "RightName": "GenericAll",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "PRYORHALE.LOCAL-S-1-5-32-544",
+     "PrincipalType": "Group",
+     "RightName": "WriteDacl",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "PRYORHALE.LOCAL-S-1-5-32-544",
+     "PrincipalType": "Group",
+     "RightName": "WriteOwner",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "PRYORHALE.LOCAL-S-1-5-32-544",
+     "PrincipalType": "Group",
+     "RightName": "GenericAll",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "S-1-5-21-2286421305-1841789134-3517623890-512",
+     "PrincipalType": "Group",
+     "RightName": "Owns",
+     "IsInherited": false
+    }
+   ],
+   "IsDeleted": false,
+   "IsACLProtected": true
+  },
+  {
+   "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-519",
+   "Properties": {
+    "domain": "PRYORHALE.LOCAL",
+    "name": "ENTERPRISE ADMINS@PRYORHALE.LOCAL",
+    "distinguishedname": "CN=Enterprise Admins,CN=Users,DC=pryorhale,DC=local",
+    "domainsid": "S-1-5-21-2286421305-1841789134-3517623890",
+    "samaccountname": "Enterprise Admins",
+    "description": "Designated administrators of the enterprise",
+    "admincount": true,
+    "whencreated": 1297675800,
+    "highvalue": true
+   },
+   "Members": [
+    {
+     "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1120",
+     "ObjectType": "User"
+    }
+   ],
+   "ContainedBy": {
+    "ObjectIdentifier": "FF989767-4A0F-40EE-877C-48BD82C4A301",
+    "ObjectType": "Container"
+   },
+   "Aces": [
+    {
+     "PrincipalSID": "S-1-5-21-2286421305-1841789134-3517623890-512",
+     "PrincipalType": "Group",
+     "RightName": "GenericAll",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "S-1-5-21-2286421305-1841789134-3517623890-519",
+     "PrincipalType": "Group",
+     "RightName": "GenericAll",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "PRYORHALE.LOCAL-S-1-5-32-544",
+     "PrincipalType": "Group",
+     "RightName": "WriteDacl",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "PRYORHALE.LOCAL-S-1-5-32-544",
+     "PrincipalType": "Group",
+     "RightName": "WriteOwner",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "PRYORHALE.LOCAL-S-1-5-32-544",
+     "PrincipalType": "Group",
+     "RightName": "GenericAll",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "S-1-5-21-2286421305-1841789134-3517623890-512",
+     "PrincipalType": "Group",
+     "RightName": "Owns",
+     "IsInherited": false
+    }
+   ],
+   "IsDeleted": false,
+   "IsACLProtected": true
+  },
+  {
+   "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-520",
+   "Properties": {
+    "domain": "PRYORHALE.LOCAL",
+    "name": "GROUP POLICY CREATOR OWNERS@PRYORHALE.LOCAL",
+    "distinguishedname": "CN=Group Policy Creator Owners,CN=Users,DC=pryorhale,DC=local",
+    "domainsid": "S-1-5-21-2286421305-1841789134-3517623890",
+    "samaccountname": "Group Policy Creator Owners",
+    "description": "Members in this group can modify group policy for the domain",
+    "admincount": false,
+    "whencreated": 1297675800,
+    "highvalue": false
+   },
+   "Members": [],
+   "ContainedBy": {
+    "ObjectIdentifier": "FF989767-4A0F-40EE-877C-48BD82C4A301",
+    "ObjectType": "Container"
+   },
+   "Aces": [
+    {
+     "PrincipalSID": "S-1-5-21-2286421305-1841789134-3517623890-512",
+     "PrincipalType": "Group",
+     "RightName": "GenericAll",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "S-1-5-21-2286421305-1841789134-3517623890-519",
+     "PrincipalType": "Group",
+     "RightName": "GenericAll",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "PRYORHALE.LOCAL-S-1-5-32-544",
+     "PrincipalType": "Group",
+     "RightName": "WriteDacl",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "PRYORHALE.LOCAL-S-1-5-32-544",
+     "PrincipalType": "Group",
+     "RightName": "WriteOwner",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "PRYORHALE.LOCAL-S-1-5-32-544",
+     "PrincipalType": "Group",
+     "RightName": "GenericAll",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "S-1-5-21-2286421305-1841789134-3517623890-512",
+     "PrincipalType": "Group",
+     "RightName": "Owns",
+     "IsInherited": false
+    }
+   ],
+   "IsDeleted": false,
+   "IsACLProtected": false
+  },
+  {
+   "ObjectIdentifier": "PRYORHALE.LOCAL-S-1-5-32-544",
+   "Properties": {
+    "domain": "PRYORHALE.LOCAL",
+    "name": "ADMINISTRATORS@PRYORHALE.LOCAL",
+    "distinguishedname": "CN=Administrators,CN=Builtin,DC=pryorhale,DC=local",
+    "domainsid": "S-1-5-21-2286421305-1841789134-3517623890",
+    "samaccountname": "Administrators",
+    "description": "Administrators have complete and unrestricted access to the computer/domain",
+    "admincount": true,
+    "whencreated": 1297675800,
+    "highvalue": true
+   },
+   "Members": [
+    {
+     "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-512",
+     "ObjectType": "Group"
+    },
+    {
+     "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-519",
+     "ObjectType": "Group"
+    }
+   ],
+   "ContainedBy": {
+    "ObjectIdentifier": "CA7DF6BC-4D36-4030-97B5-5A442CDC34B0",
+    "ObjectType": "Container"
+   },
+   "Aces": [
+    {
+     "PrincipalSID": "S-1-5-21-2286421305-1841789134-3517623890-512",
+     "PrincipalType": "Group",
+     "RightName": "GenericAll",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "S-1-5-21-2286421305-1841789134-3517623890-519",
+     "PrincipalType": "Group",
+     "RightName": "GenericAll",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "PRYORHALE.LOCAL-S-1-5-32-544",
+     "PrincipalType": "Group",
+     "RightName": "WriteDacl",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "PRYORHALE.LOCAL-S-1-5-32-544",
+     "PrincipalType": "Group",
+     "RightName": "WriteOwner",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "PRYORHALE.LOCAL-S-1-5-32-544",
+     "PrincipalType": "Group",
+     "RightName": "GenericAll",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "S-1-5-21-2286421305-1841789134-3517623890-512",
+     "PrincipalType": "Group",
+     "RightName": "Owns",
+     "IsInherited": false
+    }
+   ],
+   "IsDeleted": false,
+   "IsACLProtected": true
+  },
+  {
+   "ObjectIdentifier": "PRYORHALE.LOCAL-S-1-5-32-551",
+   "Properties": {
+    "domain": "PRYORHALE.LOCAL",
+    "name": "BACKUP OPERATORS@PRYORHALE.LOCAL",
+    "distinguishedname": "CN=Backup Operators,CN=Builtin,DC=pryorhale,DC=local",
+    "domainsid": "S-1-5-21-2286421305-1841789134-3517623890",
+    "samaccountname": "Backup Operators",
+    "description": "Backup Operators can override security restrictions for the sole purpose of backing up or restoring files",
+    "admincount": true,
+    "whencreated": 1297675800,
+    "highvalue": true
+   },
+   "Members": [
+    {
+     "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1131",
+     "ObjectType": "User"
+    }
+   ],
+   "ContainedBy": {
+    "ObjectIdentifier": "CA7DF6BC-4D36-4030-97B5-5A442CDC34B0",
+    "ObjectType": "Container"
+   },
+   "Aces": [
+    {
+     "PrincipalSID": "S-1-5-21-2286421305-1841789134-3517623890-512",
+     "PrincipalType": "Group",
+     "RightName": "GenericAll",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "S-1-5-21-2286421305-1841789134-3517623890-519",
+     "PrincipalType": "Group",
+     "RightName": "GenericAll",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "PRYORHALE.LOCAL-S-1-5-32-544",
+     "PrincipalType": "Group",
+     "RightName": "WriteDacl",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "PRYORHALE.LOCAL-S-1-5-32-544",
+     "PrincipalType": "Group",
+     "RightName": "WriteOwner",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "PRYORHALE.LOCAL-S-1-5-32-544",
+     "PrincipalType": "Group",
+     "RightName": "GenericAll",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "S-1-5-21-2286421305-1841789134-3517623890-512",
+     "PrincipalType": "Group",
+     "RightName": "Owns",
+     "IsInherited": false
+    }
+   ],
+   "IsDeleted": false,
+   "IsACLProtected": true
+  },
+  {
+   "ObjectIdentifier": "PRYORHALE.LOCAL-S-1-5-32-555",
+   "Properties": {
+    "domain": "PRYORHALE.LOCAL",
+    "name": "REMOTE DESKTOP USERS@PRYORHALE.LOCAL",
+    "distinguishedname": "CN=Remote Desktop Users,CN=Builtin,DC=pryorhale,DC=local",
+    "domainsid": "S-1-5-21-2286421305-1841789134-3517623890",
+    "samaccountname": "Remote Desktop Users",
+    "description": "Members in this group are granted the right to logon remotely",
+    "admincount": false,
+    "whencreated": 1297675800,
+    "highvalue": false
+   },
+   "Members": [
+    {
+     "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1101",
+     "ObjectType": "Group"
+    }
+   ],
+   "ContainedBy": {
+    "ObjectIdentifier": "CA7DF6BC-4D36-4030-97B5-5A442CDC34B0",
+    "ObjectType": "Container"
+   },
+   "Aces": [
+    {
+     "PrincipalSID": "S-1-5-21-2286421305-1841789134-3517623890-512",
+     "PrincipalType": "Group",
+     "RightName": "GenericAll",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "S-1-5-21-2286421305-1841789134-3517623890-519",
+     "PrincipalType": "Group",
+     "RightName": "GenericAll",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "PRYORHALE.LOCAL-S-1-5-32-544",
+     "PrincipalType": "Group",
+     "RightName": "WriteDacl",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "PRYORHALE.LOCAL-S-1-5-32-544",
+     "PrincipalType": "Group",
+     "RightName": "WriteOwner",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "PRYORHALE.LOCAL-S-1-5-32-544",
+     "PrincipalType": "Group",
+     "RightName": "GenericAll",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "S-1-5-21-2286421305-1841789134-3517623890-512",
+     "PrincipalType": "Group",
+     "RightName": "Owns",
+     "IsInherited": false
+    }
+   ],
+   "IsDeleted": false,
+   "IsACLProtected": false
+  },
+  {
+   "ObjectIdentifier": "PRYORHALE.LOCAL-S-1-5-32-580",
+   "Properties": {
+    "domain": "PRYORHALE.LOCAL",
+    "name": "REMOTE MANAGEMENT USERS@PRYORHALE.LOCAL",
+    "distinguishedname": "CN=Remote Management Users,CN=Builtin,DC=pryorhale,DC=local",
+    "domainsid": "S-1-5-21-2286421305-1841789134-3517623890",
+    "samaccountname": "Remote Management Users",
+    "description": "Members of this group can access WMI resources over management protocols",
+    "admincount": false,
+    "whencreated": 1297675800,
+    "highvalue": false
+   },
+   "Members": [],
+   "ContainedBy": {
+    "ObjectIdentifier": "CA7DF6BC-4D36-4030-97B5-5A442CDC34B0",
+    "ObjectType": "Container"
+   },
+   "Aces": [
+    {
+     "PrincipalSID": "S-1-5-21-2286421305-1841789134-3517623890-512",
+     "PrincipalType": "Group",
+     "RightName": "GenericAll",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "S-1-5-21-2286421305-1841789134-3517623890-519",
+     "PrincipalType": "Group",
+     "RightName": "GenericAll",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "PRYORHALE.LOCAL-S-1-5-32-544",
+     "PrincipalType": "Group",
+     "RightName": "WriteDacl",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "PRYORHALE.LOCAL-S-1-5-32-544",
+     "PrincipalType": "Group",
+     "RightName": "WriteOwner",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "PRYORHALE.LOCAL-S-1-5-32-544",
+     "PrincipalType": "Group",
+     "RightName": "GenericAll",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "S-1-5-21-2286421305-1841789134-3517623890-512",
+     "PrincipalType": "Group",
+     "RightName": "Owns",
+     "IsInherited": false
+    }
+   ],
+   "IsDeleted": false,
+   "IsACLProtected": false
+  },
+  {
+   "ObjectIdentifier": "PRYORHALE.LOCAL-S-1-5-32-562",
+   "Properties": {
+    "domain": "PRYORHALE.LOCAL",
+    "name": "DISTRIBUTED COM USERS@PRYORHALE.LOCAL",
+    "distinguishedname": "CN=Distributed COM Users,CN=Builtin,DC=pryorhale,DC=local",
+    "domainsid": "S-1-5-21-2286421305-1841789134-3517623890",
+    "samaccountname": "Distributed COM Users",
+    "description": "Members are allowed to launch, activate and use Distributed COM objects on this machine",
+    "admincount": false,
+    "whencreated": 1297675800,
+    "highvalue": false
+   },
+   "Members": [],
+   "ContainedBy": {
+    "ObjectIdentifier": "CA7DF6BC-4D36-4030-97B5-5A442CDC34B0",
+    "ObjectType": "Container"
+   },
+   "Aces": [
+    {
+     "PrincipalSID": "S-1-5-21-2286421305-1841789134-3517623890-512",
+     "PrincipalType": "Group",
+     "RightName": "GenericAll",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "S-1-5-21-2286421305-1841789134-3517623890-519",
+     "PrincipalType": "Group",
+     "RightName": "GenericAll",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "PRYORHALE.LOCAL-S-1-5-32-544",
+     "PrincipalType": "Group",
+     "RightName": "WriteDacl",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "PRYORHALE.LOCAL-S-1-5-32-544",
+     "PrincipalType": "Group",
+     "RightName": "WriteOwner",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "PRYORHALE.LOCAL-S-1-5-32-544",
+     "PrincipalType": "Group",
+     "RightName": "GenericAll",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "S-1-5-21-2286421305-1841789134-3517623890-512",
+     "PrincipalType": "Group",
+     "RightName": "Owns",
+     "IsInherited": false
+    }
+   ],
+   "IsDeleted": false,
+   "IsACLProtected": false
+  },
+  {
+   "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1101",
+   "Properties": {
+    "domain": "PRYORHALE.LOCAL",
+    "name": "IT SUPPORT@PRYORHALE.LOCAL",
+    "distinguishedname": "CN=IT Support,OU=IT,DC=pryorhale,DC=local",
+    "domainsid": "S-1-5-21-2286421305-1841789134-3517623890",
+    "samaccountname": "IT Support",
+    "description": "Tier 2 support. Local administrators on every workstation and laptop.",
+    "admincount": false,
+    "whencreated": 1463389200,
+    "highvalue": false
+   },
+   "Members": [
+    {
+     "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1119",
+     "ObjectType": "User"
+    },
+    {
+     "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1121",
+     "ObjectType": "User"
+    },
+    {
+     "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1122",
+     "ObjectType": "User"
+    },
+    {
+     "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1162",
+     "ObjectType": "User"
+    },
+    {
+     "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1174",
+     "ObjectType": "User"
+    },
+    {
+     "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1180",
+     "ObjectType": "User"
+    },
+    {
+     "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1192",
+     "ObjectType": "User"
+    }
+   ],
+   "ContainedBy": {
+    "ObjectIdentifier": "422B39BA-D74C-4AF8-8068-876DF53FC833",
+    "ObjectType": "OU"
+   },
+   "Aces": [
+    {
+     "PrincipalSID": "S-1-5-21-2286421305-1841789134-3517623890-512",
+     "PrincipalType": "Group",
+     "RightName": "GenericAll",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "S-1-5-21-2286421305-1841789134-3517623890-519",
+     "PrincipalType": "Group",
+     "RightName": "GenericAll",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "PRYORHALE.LOCAL-S-1-5-32-544",
+     "PrincipalType": "Group",
+     "RightName": "WriteDacl",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "PRYORHALE.LOCAL-S-1-5-32-544",
+     "PrincipalType": "Group",
+     "RightName": "WriteOwner",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "PRYORHALE.LOCAL-S-1-5-32-544",
+     "PrincipalType": "Group",
+     "RightName": "GenericAll",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "S-1-5-21-2286421305-1841789134-3517623890-512",
+     "PrincipalType": "Group",
+     "RightName": "Owns",
+     "IsInherited": false
+    }
+   ],
+   "IsDeleted": false,
+   "IsACLProtected": false
+  },
+  {
+   "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1102",
+   "Properties": {
+    "domain": "PRYORHALE.LOCAL",
+    "name": "HELPDESK@PRYORHALE.LOCAL",
+    "distinguishedname": "CN=Helpdesk,OU=IT,DC=pryorhale,DC=local",
+    "domainsid": "S-1-5-21-2286421305-1841789134-3517623890",
+    "samaccountname": "Helpdesk",
+    "description": "Tier 1 support. Password resets for staff accounts (delegated).",
+    "admincount": false,
+    "whencreated": 1702112400,
+    "highvalue": false
+   },
+   "Members": [
+    {
+     "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1123",
+     "ObjectType": "User"
+    },
+    {
+     "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1124",
+     "ObjectType": "User"
+    },
+    {
+     "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1192",
+     "ObjectType": "User"
+    }
+   ],
+   "ContainedBy": {
+    "ObjectIdentifier": "422B39BA-D74C-4AF8-8068-876DF53FC833",
+    "ObjectType": "OU"
+   },
+   "Aces": [
+    {
+     "PrincipalSID": "S-1-5-21-2286421305-1841789134-3517623890-512",
+     "PrincipalType": "Group",
+     "RightName": "GenericAll",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "S-1-5-21-2286421305-1841789134-3517623890-519",
+     "PrincipalType": "Group",
+     "RightName": "GenericAll",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "PRYORHALE.LOCAL-S-1-5-32-544",
+     "PrincipalType": "Group",
+     "RightName": "WriteDacl",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "PRYORHALE.LOCAL-S-1-5-32-544",
+     "PrincipalType": "Group",
+     "RightName": "WriteOwner",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "PRYORHALE.LOCAL-S-1-5-32-544",
+     "PrincipalType": "Group",
+     "RightName": "GenericAll",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "S-1-5-21-2286421305-1841789134-3517623890-512",
+     "PrincipalType": "Group",
+     "RightName": "Owns",
+     "IsInherited": false
+    }
+   ],
+   "IsDeleted": false,
+   "IsACLProtected": false
+  },
+  {
+   "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1103",
+   "Properties": {
+    "domain": "PRYORHALE.LOCAL",
+    "name": "SERVER ADMINS@PRYORHALE.LOCAL",
+    "distinguishedname": "CN=Server Admins,OU=IT,DC=pryorhale,DC=local",
+    "domainsid": "S-1-5-21-2286421305-1841789134-3517623890",
+    "samaccountname": "Server Admins",
+    "description": "Local administrators on member servers other than FS-01.",
+    "admincount": false,
+    "whencreated": 1616144400,
+    "highvalue": false
+   },
+   "Members": [
+    {
+     "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1119",
+     "ObjectType": "User"
+    },
+    {
+     "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1122",
+     "ObjectType": "User"
+    },
+    {
+     "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1162",
+     "ObjectType": "User"
+    }
+   ],
+   "ContainedBy": {
+    "ObjectIdentifier": "422B39BA-D74C-4AF8-8068-876DF53FC833",
+    "ObjectType": "OU"
+   },
+   "Aces": [
+    {
+     "PrincipalSID": "S-1-5-21-2286421305-1841789134-3517623890-512",
+     "PrincipalType": "Group",
+     "RightName": "GenericAll",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "S-1-5-21-2286421305-1841789134-3517623890-519",
+     "PrincipalType": "Group",
+     "RightName": "GenericAll",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "PRYORHALE.LOCAL-S-1-5-32-544",
+     "PrincipalType": "Group",
+     "RightName": "WriteDacl",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "PRYORHALE.LOCAL-S-1-5-32-544",
+     "PrincipalType": "Group",
+     "RightName": "WriteOwner",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "PRYORHALE.LOCAL-S-1-5-32-544",
+     "PrincipalType": "Group",
+     "RightName": "GenericAll",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "S-1-5-21-2286421305-1841789134-3517623890-512",
+     "PrincipalType": "Group",
+     "RightName": "Owns",
+     "IsInherited": false
+    }
+   ],
+   "IsDeleted": false,
+   "IsACLProtected": false
+  },
+  {
+   "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1104",
+   "Properties": {
+    "domain": "PRYORHALE.LOCAL",
+    "name": "SRV-FS01-ADMINS@PRYORHALE.LOCAL",
+    "distinguishedname": "CN=SRV-FS01-Admins,OU=IT,DC=pryorhale,DC=local",
+    "domainsid": "S-1-5-21-2286421305-1841789134-3517623890",
+    "samaccountname": "SRV-FS01-Admins",
+    "description": "Local administrators on FS-01 (file server). Membership reviewed quarterly \u2014 last review 2 Feb 2026.",
+    "admincount": false,
+    "whencreated": 1711011600,
+    "highvalue": false
+   },
+   "Members": [
+    {
+     "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1119",
+     "ObjectType": "User"
+    },
+    {
+     "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1121",
+     "ObjectType": "User"
+    },
+    {
+     "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1122",
+     "ObjectType": "User"
+    }
+   ],
+   "ContainedBy": {
+    "ObjectIdentifier": "422B39BA-D74C-4AF8-8068-876DF53FC833",
+    "ObjectType": "OU"
+   },
+   "Aces": [
+    {
+     "PrincipalSID": "S-1-5-21-2286421305-1841789134-3517623890-512",
+     "PrincipalType": "Group",
+     "RightName": "GenericAll",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "S-1-5-21-2286421305-1841789134-3517623890-519",
+     "PrincipalType": "Group",
+     "RightName": "GenericAll",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "PRYORHALE.LOCAL-S-1-5-32-544",
+     "PrincipalType": "Group",
+     "RightName": "WriteDacl",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "PRYORHALE.LOCAL-S-1-5-32-544",
+     "PrincipalType": "Group",
+     "RightName": "WriteOwner",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "PRYORHALE.LOCAL-S-1-5-32-544",
+     "PrincipalType": "Group",
+     "RightName": "GenericAll",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "S-1-5-21-2286421305-1841789134-3517623890-512",
+     "PrincipalType": "Group",
+     "RightName": "Owns",
+     "IsInherited": false
+    }
+   ],
+   "IsDeleted": false,
+   "IsACLProtected": false
+  },
+  {
+   "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1105",
+   "Properties": {
+    "domain": "PRYORHALE.LOCAL",
+    "name": "FINANCE STAFF@PRYORHALE.LOCAL",
+    "distinguishedname": "CN=Finance Staff,OU=Finance,OU=Corporate,DC=pryorhale,DC=local",
+    "domainsid": "S-1-5-21-2286421305-1841789134-3517623890",
+    "samaccountname": "Finance Staff",
+    "description": "Finance and payroll. Read/write on \\\\FS-01\\Finance.",
+    "admincount": false,
+    "whencreated": 1669366800,
+    "highvalue": false
+   },
+   "Members": [
+    {
+     "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1118",
+     "ObjectType": "User"
+    },
+    {
+     "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1134",
+     "ObjectType": "User"
+    },
+    {
+     "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1135",
+     "ObjectType": "User"
+    },
+    {
+     "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1136",
+     "ObjectType": "User"
+    },
+    {
+     "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1163",
+     "ObjectType": "User"
+    },
+    {
+     "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1173",
+     "ObjectType": "User"
+    },
+    {
+     "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1187",
+     "ObjectType": "User"
+    },
+    {
+     "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1196",
+     "ObjectType": "User"
+    }
+   ],
+   "ContainedBy": {
+    "ObjectIdentifier": "06F93CAF-B33E-4502-AC8D-C06AFB227AD8",
+    "ObjectType": "OU"
+   },
+   "Aces": [
+    {
+     "PrincipalSID": "S-1-5-21-2286421305-1841789134-3517623890-512",
+     "PrincipalType": "Group",
+     "RightName": "GenericAll",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "S-1-5-21-2286421305-1841789134-3517623890-519",
+     "PrincipalType": "Group",
+     "RightName": "GenericAll",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "PRYORHALE.LOCAL-S-1-5-32-544",
+     "PrincipalType": "Group",
+     "RightName": "WriteDacl",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "PRYORHALE.LOCAL-S-1-5-32-544",
+     "PrincipalType": "Group",
+     "RightName": "WriteOwner",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "PRYORHALE.LOCAL-S-1-5-32-544",
+     "PrincipalType": "Group",
+     "RightName": "GenericAll",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "S-1-5-21-2286421305-1841789134-3517623890-512",
+     "PrincipalType": "Group",
+     "RightName": "Owns",
+     "IsInherited": false
+    },
+    {
+     "PrincipalSID": "S-1-5-21-2286421305-1841789134-3517623890-1102",
+     "PrincipalType": "Group",
+     "RightName": "AddMember",
+     "IsInherited": false
+    }
+   ],
+   "IsDeleted": false,
+   "IsACLProtected": false
+  },
+  {
+   "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1106",
+   "Properties": {
+    "domain": "PRYORHALE.LOCAL",
+    "name": "LEGAL STAFF@PRYORHALE.LOCAL",
+    "distinguishedname": "CN=Legal Staff,OU=Legal,OU=Corporate,DC=pryorhale,DC=local",
+    "domainsid": "S-1-5-21-2286421305-1841789134-3517623890",
+    "samaccountname": "Legal Staff",
+    "description": "In-house legal. Read/write on \\\\FS-01\\Legal.",
+    "admincount": false,
+    "whencreated": 1603875600,
+    "highvalue": false
+   },
+   "Members": [
+    {
+     "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1137",
+     "ObjectType": "User"
+    },
+    {
+     "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1138",
+     "ObjectType": "User"
+    },
+    {
+     "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1169",
+     "ObjectType": "User"
+    },
+    {
+     "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1179",
+     "ObjectType": "User"
+    },
+    {
+     "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1193",
+     "ObjectType": "User"
+    }
+   ],
+   "ContainedBy": {
+    "ObjectIdentifier": "40738331-2D6D-40E2-90A0-5B2AC1840363",
+    "ObjectType": "OU"
+   },
+   "Aces": [
+    {
+     "PrincipalSID": "S-1-5-21-2286421305-1841789134-3517623890-512",
+     "PrincipalType": "Group",
+     "RightName": "GenericAll",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "S-1-5-21-2286421305-1841789134-3517623890-519",
+     "PrincipalType": "Group",
+     "RightName": "GenericAll",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "PRYORHALE.LOCAL-S-1-5-32-544",
+     "PrincipalType": "Group",
+     "RightName": "WriteDacl",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "PRYORHALE.LOCAL-S-1-5-32-544",
+     "PrincipalType": "Group",
+     "RightName": "WriteOwner",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "PRYORHALE.LOCAL-S-1-5-32-544",
+     "PrincipalType": "Group",
+     "RightName": "GenericAll",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "S-1-5-21-2286421305-1841789134-3517623890-512",
+     "PrincipalType": "Group",
+     "RightName": "Owns",
+     "IsInherited": false
+    },
+    {
+     "PrincipalSID": "S-1-5-21-2286421305-1841789134-3517623890-1102",
+     "PrincipalType": "Group",
+     "RightName": "AddMember",
+     "IsInherited": false
+    }
+   ],
+   "IsDeleted": false,
+   "IsACLProtected": false
+  },
+  {
+   "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1107",
+   "Properties": {
+    "domain": "PRYORHALE.LOCAL",
+    "name": "HR STAFF@PRYORHALE.LOCAL",
+    "distinguishedname": "CN=HR Staff,OU=Human Resources,OU=Corporate,DC=pryorhale,DC=local",
+    "domainsid": "S-1-5-21-2286421305-1841789134-3517623890",
+    "samaccountname": "HR Staff",
+    "description": "HR team. Read/write on \\\\FS-01\\HR.",
+    "admincount": false,
+    "whencreated": 1464339600,
+    "highvalue": false
+   },
+   "Members": [
+    {
+     "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1139",
+     "ObjectType": "User"
+    },
+    {
+     "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1140",
+     "ObjectType": "User"
+    },
+    {
+     "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1141",
+     "ObjectType": "User"
+    },
+    {
+     "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1168",
+     "ObjectType": "User"
+    },
+    {
+     "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1185",
+     "ObjectType": "User"
+    }
+   ],
+   "ContainedBy": {
+    "ObjectIdentifier": "FDB97A98-B50E-4EB2-AB72-9033B0634363",
+    "ObjectType": "OU"
+   },
+   "Aces": [
+    {
+     "PrincipalSID": "S-1-5-21-2286421305-1841789134-3517623890-512",
+     "PrincipalType": "Group",
+     "RightName": "GenericAll",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "S-1-5-21-2286421305-1841789134-3517623890-519",
+     "PrincipalType": "Group",
+     "RightName": "GenericAll",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "PRYORHALE.LOCAL-S-1-5-32-544",
+     "PrincipalType": "Group",
+     "RightName": "WriteDacl",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "PRYORHALE.LOCAL-S-1-5-32-544",
+     "PrincipalType": "Group",
+     "RightName": "WriteOwner",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "PRYORHALE.LOCAL-S-1-5-32-544",
+     "PrincipalType": "Group",
+     "RightName": "GenericAll",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "S-1-5-21-2286421305-1841789134-3517623890-512",
+     "PrincipalType": "Group",
+     "RightName": "Owns",
+     "IsInherited": false
+    },
+    {
+     "PrincipalSID": "S-1-5-21-2286421305-1841789134-3517623890-1102",
+     "PrincipalType": "Group",
+     "RightName": "AddMember",
+     "IsInherited": false
+    }
+   ],
+   "IsDeleted": false,
+   "IsACLProtected": false
+  },
+  {
+   "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1108",
+   "Properties": {
+    "domain": "PRYORHALE.LOCAL",
+    "name": "ENGINEERING STAFF@PRYORHALE.LOCAL",
+    "distinguishedname": "CN=Engineering Staff,OU=Engineering,DC=pryorhale,DC=local",
+    "domainsid": "S-1-5-21-2286421305-1841789134-3517623890",
+    "samaccountname": "Engineering Staff",
+    "description": "All engineering disciplines. Read on \\\\FS-01\\Standards.",
+    "admincount": false,
+    "whencreated": 1653814800,
+    "highvalue": false
+   },
+   "Members": [
+    {
+     "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1127",
+     "ObjectType": "User"
+    },
+    {
+     "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1128",
+     "ObjectType": "User"
+    },
+    {
+     "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1142",
+     "ObjectType": "User"
+    },
+    {
+     "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1143",
+     "ObjectType": "User"
+    },
+    {
+     "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1144",
+     "ObjectType": "User"
+    },
+    {
+     "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1145",
+     "ObjectType": "User"
+    },
+    {
+     "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1146",
+     "ObjectType": "User"
+    },
+    {
+     "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1147",
+     "ObjectType": "User"
+    },
+    {
+     "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1148",
+     "ObjectType": "User"
+    },
+    {
+     "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1149",
+     "ObjectType": "User"
+    },
+    {
+     "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1150",
+     "ObjectType": "User"
+    },
+    {
+     "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1151",
+     "ObjectType": "User"
+    },
+    {
+     "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1152",
+     "ObjectType": "User"
+    },
+    {
+     "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1153",
+     "ObjectType": "User"
+    },
+    {
+     "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1154",
+     "ObjectType": "User"
+    },
+    {
+     "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1155",
+     "ObjectType": "User"
+    },
+    {
+     "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1164",
+     "ObjectType": "User"
+    },
+    {
+     "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1165",
+     "ObjectType": "User"
+    },
+    {
+     "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1166",
+     "ObjectType": "User"
+    },
+    {
+     "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1170",
+     "ObjectType": "User"
+    },
+    {
+     "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1171",
+     "ObjectType": "User"
+    },
+    {
+     "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1172",
+     "ObjectType": "User"
+    },
+    {
+     "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1176",
+     "ObjectType": "User"
+    },
+    {
+     "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1177",
+     "ObjectType": "User"
+    },
+    {
+     "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1178",
+     "ObjectType": "User"
+    },
+    {
+     "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1182",
+     "ObjectType": "User"
+    },
+    {
+     "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1184",
+     "ObjectType": "User"
+    },
+    {
+     "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1186",
+     "ObjectType": "User"
+    },
+    {
+     "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1188",
+     "ObjectType": "User"
+    },
+    {
+     "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1189",
+     "ObjectType": "User"
+    },
+    {
+     "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1191",
+     "ObjectType": "User"
+    },
+    {
+     "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1194",
+     "ObjectType": "User"
+    },
+    {
+     "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1195",
+     "ObjectType": "User"
+    },
+    {
+     "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1115",
+     "ObjectType": "Group"
+    }
+   ],
+   "ContainedBy": {
+    "ObjectIdentifier": "FC6F6727-1611-48CF-8AC9-E4E5D017A252",
+    "ObjectType": "OU"
+   },
+   "Aces": [
+    {
+     "PrincipalSID": "S-1-5-21-2286421305-1841789134-3517623890-512",
+     "PrincipalType": "Group",
+     "RightName": "GenericAll",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "S-1-5-21-2286421305-1841789134-3517623890-519",
+     "PrincipalType": "Group",
+     "RightName": "GenericAll",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "PRYORHALE.LOCAL-S-1-5-32-544",
+     "PrincipalType": "Group",
+     "RightName": "WriteDacl",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "PRYORHALE.LOCAL-S-1-5-32-544",
+     "PrincipalType": "Group",
+     "RightName": "WriteOwner",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "PRYORHALE.LOCAL-S-1-5-32-544",
+     "PrincipalType": "Group",
+     "RightName": "GenericAll",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "S-1-5-21-2286421305-1841789134-3517623890-512",
+     "PrincipalType": "Group",
+     "RightName": "Owns",
+     "IsInherited": false
+    },
+    {
+     "PrincipalSID": "S-1-5-21-2286421305-1841789134-3517623890-1102",
+     "PrincipalType": "Group",
+     "RightName": "AddMember",
+     "IsInherited": false
+    }
+   ],
+   "IsDeleted": false,
+   "IsACLProtected": false
+  },
+  {
+   "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1109",
+   "Properties": {
+    "domain": "PRYORHALE.LOCAL",
+    "name": "SALES STAFF@PRYORHALE.LOCAL",
+    "distinguishedname": "CN=Sales Staff,OU=Sales,DC=pryorhale,DC=local",
+    "domainsid": "S-1-5-21-2286421305-1841789134-3517623890",
+    "samaccountname": "Sales Staff",
+    "description": "Business development. Read/write on \\\\FS-01\\Sales.",
+    "admincount": false,
+    "whencreated": 1453798800,
+    "highvalue": false
+   },
+   "Members": [
+    {
+     "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1125",
+     "ObjectType": "User"
+    },
+    {
+     "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1126",
+     "ObjectType": "User"
+    },
+    {
+     "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1130",
+     "ObjectType": "User"
+    },
+    {
+     "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1156",
+     "ObjectType": "User"
+    },
+    {
+     "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1157",
+     "ObjectType": "User"
+    },
+    {
+     "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1158",
+     "ObjectType": "User"
+    },
+    {
+     "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1167",
+     "ObjectType": "User"
+    },
+    {
+     "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1175",
+     "ObjectType": "User"
+    },
+    {
+     "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1183",
+     "ObjectType": "User"
+    },
+    {
+     "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1190",
+     "ObjectType": "User"
+    },
+    {
+     "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1197",
+     "ObjectType": "User"
+    }
+   ],
+   "ContainedBy": {
+    "ObjectIdentifier": "405758A9-13D7-45DA-A44A-1A26F44392FE",
+    "ObjectType": "OU"
+   },
+   "Aces": [
+    {
+     "PrincipalSID": "S-1-5-21-2286421305-1841789134-3517623890-512",
+     "PrincipalType": "Group",
+     "RightName": "GenericAll",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "S-1-5-21-2286421305-1841789134-3517623890-519",
+     "PrincipalType": "Group",
+     "RightName": "GenericAll",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "PRYORHALE.LOCAL-S-1-5-32-544",
+     "PrincipalType": "Group",
+     "RightName": "WriteDacl",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "PRYORHALE.LOCAL-S-1-5-32-544",
+     "PrincipalType": "Group",
+     "RightName": "WriteOwner",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "PRYORHALE.LOCAL-S-1-5-32-544",
+     "PrincipalType": "Group",
+     "RightName": "GenericAll",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "S-1-5-21-2286421305-1841789134-3517623890-512",
+     "PrincipalType": "Group",
+     "RightName": "Owns",
+     "IsInherited": false
+    },
+    {
+     "PrincipalSID": "S-1-5-21-2286421305-1841789134-3517623890-1102",
+     "PrincipalType": "Group",
+     "RightName": "AddMember",
+     "IsInherited": false
+    }
+   ],
+   "IsDeleted": false,
+   "IsACLProtected": false
+  },
+  {
+   "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1110",
+   "Properties": {
+    "domain": "PRYORHALE.LOCAL",
+    "name": "CONTRACTORS@PRYORHALE.LOCAL",
+    "distinguishedname": "CN=Contractors,OU=Contractors,DC=pryorhale,DC=local",
+    "domainsid": "S-1-5-21-2286421305-1841789134-3517623890",
+    "samaccountname": "Contractors",
+    "description": "Fixed-term contractors. No access beyond the project groups they are added to.",
+    "admincount": false,
+    "whencreated": 1461834000,
+    "highvalue": false
+   },
+   "Members": [
+    {
+     "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1129",
+     "ObjectType": "User"
+    },
+    {
+     "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1159",
+     "ObjectType": "User"
+    },
+    {
+     "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1160",
+     "ObjectType": "User"
+    }
+   ],
+   "ContainedBy": {
+    "ObjectIdentifier": "537B2F9A-B049-43C5-A18B-D0BDFA700DC0",
+    "ObjectType": "OU"
+   },
+   "Aces": [
+    {
+     "PrincipalSID": "S-1-5-21-2286421305-1841789134-3517623890-512",
+     "PrincipalType": "Group",
+     "RightName": "GenericAll",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "S-1-5-21-2286421305-1841789134-3517623890-519",
+     "PrincipalType": "Group",
+     "RightName": "GenericAll",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "PRYORHALE.LOCAL-S-1-5-32-544",
+     "PrincipalType": "Group",
+     "RightName": "WriteDacl",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "PRYORHALE.LOCAL-S-1-5-32-544",
+     "PrincipalType": "Group",
+     "RightName": "WriteOwner",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "PRYORHALE.LOCAL-S-1-5-32-544",
+     "PrincipalType": "Group",
+     "RightName": "GenericAll",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "S-1-5-21-2286421305-1841789134-3517623890-512",
+     "PrincipalType": "Group",
+     "RightName": "Owns",
+     "IsInherited": false
+    },
+    {
+     "PrincipalSID": "S-1-5-21-2286421305-1841789134-3517623890-1102",
+     "PrincipalType": "Group",
+     "RightName": "AddMember",
+     "IsInherited": false
+    }
+   ],
+   "IsDeleted": false,
+   "IsACLProtected": false
+  },
+  {
+   "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1111",
+   "Properties": {
+    "domain": "PRYORHALE.LOCAL",
+    "name": "PROJECT ASHFORD@PRYORHALE.LOCAL",
+    "distinguishedname": "CN=Project Ashford,OU=Sales,DC=pryorhale,DC=local",
+    "domainsid": "S-1-5-21-2286421305-1841789134-3517623890",
+    "samaccountname": "Project Ashford",
+    "description": "Ashford Viaduct tender team. Read/write on \\\\FS-01\\Projects\\Ashford. Sponsor: Sales (G. Vane). Membership by Bid Manager only.",
+    "admincount": false,
+    "whencreated": 1587027600,
+    "highvalue": false
+   },
+   "Members": [
+    {
+     "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1118",
+     "ObjectType": "User"
+    },
+    {
+     "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1125",
+     "ObjectType": "User"
+    },
+    {
+     "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1126",
+     "ObjectType": "User"
+    },
+    {
+     "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1127",
+     "ObjectType": "User"
+    },
+    {
+     "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1128",
+     "ObjectType": "User"
+    },
+    {
+     "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1129",
+     "ObjectType": "User"
+    },
+    {
+     "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1130",
+     "ObjectType": "User"
+    }
+   ],
+   "ContainedBy": {
+    "ObjectIdentifier": "405758A9-13D7-45DA-A44A-1A26F44392FE",
+    "ObjectType": "OU"
+   },
+   "Aces": [
+    {
+     "PrincipalSID": "S-1-5-21-2286421305-1841789134-3517623890-512",
+     "PrincipalType": "Group",
+     "RightName": "GenericAll",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "S-1-5-21-2286421305-1841789134-3517623890-519",
+     "PrincipalType": "Group",
+     "RightName": "GenericAll",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "PRYORHALE.LOCAL-S-1-5-32-544",
+     "PrincipalType": "Group",
+     "RightName": "WriteDacl",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "PRYORHALE.LOCAL-S-1-5-32-544",
+     "PrincipalType": "Group",
+     "RightName": "WriteOwner",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "PRYORHALE.LOCAL-S-1-5-32-544",
+     "PrincipalType": "Group",
+     "RightName": "GenericAll",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "S-1-5-21-2286421305-1841789134-3517623890-512",
+     "PrincipalType": "Group",
+     "RightName": "Owns",
+     "IsInherited": false
+    },
+    {
+     "PrincipalSID": "S-1-5-21-2286421305-1841789134-3517623890-1125",
+     "PrincipalType": "User",
+     "RightName": "AddMember",
+     "IsInherited": false
+    },
+    {
+     "PrincipalSID": "S-1-5-21-2286421305-1841789134-3517623890-1126",
+     "PrincipalType": "User",
+     "RightName": "GenericWrite",
+     "IsInherited": false
+    }
+   ],
+   "IsDeleted": false,
+   "IsACLProtected": false
+  },
+  {
+   "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1112",
+   "Properties": {
+    "domain": "PRYORHALE.LOCAL",
+    "name": "PROJECT KESTREL@PRYORHALE.LOCAL",
+    "distinguishedname": "CN=Project Kestrel,OU=Engineering,DC=pryorhale,DC=local",
+    "domainsid": "S-1-5-21-2286421305-1841789134-3517623890",
+    "samaccountname": "Project Kestrel",
+    "description": "Kestrel Bridge refurbishment. Read/write on \\\\FS-01\\Projects\\Kestrel.",
+    "admincount": false,
+    "whencreated": 1455354000,
+    "highvalue": false
+   },
+   "Members": [
+    {
+     "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1128",
+     "ObjectType": "User"
+    },
+    {
+     "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1142",
+     "ObjectType": "User"
+    },
+    {
+     "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1144",
+     "ObjectType": "User"
+    },
+    {
+     "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1148",
+     "ObjectType": "User"
+    },
+    {
+     "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1152",
+     "ObjectType": "User"
+    },
+    {
+     "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1157",
+     "ObjectType": "User"
+    },
+    {
+     "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1159",
+     "ObjectType": "User"
+    },
+    {
+     "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1164",
+     "ObjectType": "User"
+    },
+    {
+     "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1175",
+     "ObjectType": "User"
+    },
+    {
+     "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1182",
+     "ObjectType": "User"
+    }
+   ],
+   "ContainedBy": {
+    "ObjectIdentifier": "FC6F6727-1611-48CF-8AC9-E4E5D017A252",
+    "ObjectType": "OU"
+   },
+   "Aces": [
+    {
+     "PrincipalSID": "S-1-5-21-2286421305-1841789134-3517623890-512",
+     "PrincipalType": "Group",
+     "RightName": "GenericAll",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "S-1-5-21-2286421305-1841789134-3517623890-519",
+     "PrincipalType": "Group",
+     "RightName": "GenericAll",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "PRYORHALE.LOCAL-S-1-5-32-544",
+     "PrincipalType": "Group",
+     "RightName": "WriteDacl",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "PRYORHALE.LOCAL-S-1-5-32-544",
+     "PrincipalType": "Group",
+     "RightName": "WriteOwner",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "PRYORHALE.LOCAL-S-1-5-32-544",
+     "PrincipalType": "Group",
+     "RightName": "GenericAll",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "S-1-5-21-2286421305-1841789134-3517623890-512",
+     "PrincipalType": "Group",
+     "RightName": "Owns",
+     "IsInherited": false
+    },
+    {
+     "PrincipalSID": "S-1-5-21-2286421305-1841789134-3517623890-1126",
+     "PrincipalType": "User",
+     "RightName": "GenericWrite",
+     "IsInherited": false
+    }
+   ],
+   "IsDeleted": false,
+   "IsACLProtected": false
+  },
+  {
+   "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1113",
+   "Properties": {
+    "domain": "PRYORHALE.LOCAL",
+    "name": "PROJECT NORTHGATE@PRYORHALE.LOCAL",
+    "distinguishedname": "CN=Project Northgate,OU=Engineering,DC=pryorhale,DC=local",
+    "domainsid": "S-1-5-21-2286421305-1841789134-3517623890",
+    "samaccountname": "Project Northgate",
+    "description": "Northgate depot design. Read/write on \\\\FS-01\\Projects\\Northgate.",
+    "admincount": false,
+    "whencreated": 1640768400,
+    "highvalue": false
+   },
+   "Members": [
+    {
+     "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1143",
+     "ObjectType": "User"
+    },
+    {
+     "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1145",
+     "ObjectType": "User"
+    },
+    {
+     "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1146",
+     "ObjectType": "User"
+    },
+    {
+     "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1147",
+     "ObjectType": "User"
+    },
+    {
+     "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1154",
+     "ObjectType": "User"
+    },
+    {
+     "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1160",
+     "ObjectType": "User"
+    },
+    {
+     "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1177",
+     "ObjectType": "User"
+    },
+    {
+     "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1189",
+     "ObjectType": "User"
+    }
+   ],
+   "ContainedBy": {
+    "ObjectIdentifier": "FC6F6727-1611-48CF-8AC9-E4E5D017A252",
+    "ObjectType": "OU"
+   },
+   "Aces": [
+    {
+     "PrincipalSID": "S-1-5-21-2286421305-1841789134-3517623890-512",
+     "PrincipalType": "Group",
+     "RightName": "GenericAll",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "S-1-5-21-2286421305-1841789134-3517623890-519",
+     "PrincipalType": "Group",
+     "RightName": "GenericAll",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "PRYORHALE.LOCAL-S-1-5-32-544",
+     "PrincipalType": "Group",
+     "RightName": "WriteDacl",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "PRYORHALE.LOCAL-S-1-5-32-544",
+     "PrincipalType": "Group",
+     "RightName": "WriteOwner",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "PRYORHALE.LOCAL-S-1-5-32-544",
+     "PrincipalType": "Group",
+     "RightName": "GenericAll",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "S-1-5-21-2286421305-1841789134-3517623890-512",
+     "PrincipalType": "Group",
+     "RightName": "Owns",
+     "IsInherited": false
+    },
+    {
+     "PrincipalSID": "S-1-5-21-2286421305-1841789134-3517623890-1126",
+     "PrincipalType": "User",
+     "RightName": "GenericWrite",
+     "IsInherited": false
+    }
+   ],
+   "IsDeleted": false,
+   "IsACLProtected": false
+  },
+  {
+   "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1114",
+   "Properties": {
+    "domain": "PRYORHALE.LOCAL",
+    "name": "VPN USERS@PRYORHALE.LOCAL",
+    "distinguishedname": "CN=VPN Users,OU=IT,DC=pryorhale,DC=local",
+    "domainsid": "S-1-5-21-2286421305-1841789134-3517623890",
+    "samaccountname": "VPN Users",
+    "description": "Remote access via the AlwaysOn VPN.",
+    "admincount": false,
+    "whencreated": 1608368400,
+    "highvalue": false
+   },
+   "Members": [
+    {
+     "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1119",
+     "ObjectType": "User"
+    },
+    {
+     "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1121",
+     "ObjectType": "User"
+    },
+    {
+     "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1122",
+     "ObjectType": "User"
+    },
+    {
+     "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1125",
+     "ObjectType": "User"
+    },
+    {
+     "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1126",
+     "ObjectType": "User"
+    },
+    {
+     "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1127",
+     "ObjectType": "User"
+    },
+    {
+     "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1156",
+     "ObjectType": "User"
+    },
+    {
+     "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1158",
+     "ObjectType": "User"
+    },
+    {
+     "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1162",
+     "ObjectType": "User"
+    },
+    {
+     "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1174",
+     "ObjectType": "User"
+    },
+    {
+     "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1180",
+     "ObjectType": "User"
+    },
+    {
+     "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1181",
+     "ObjectType": "User"
+    },
+    {
+     "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1183",
+     "ObjectType": "User"
+    },
+    {
+     "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1190",
+     "ObjectType": "User"
+    },
+    {
+     "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1101",
+     "ObjectType": "Group"
+    },
+    {
+     "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1109",
+     "ObjectType": "Group"
+    }
+   ],
+   "ContainedBy": {
+    "ObjectIdentifier": "422B39BA-D74C-4AF8-8068-876DF53FC833",
+    "ObjectType": "OU"
+   },
+   "Aces": [
+    {
+     "PrincipalSID": "S-1-5-21-2286421305-1841789134-3517623890-512",
+     "PrincipalType": "Group",
+     "RightName": "GenericAll",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "S-1-5-21-2286421305-1841789134-3517623890-519",
+     "PrincipalType": "Group",
+     "RightName": "GenericAll",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "PRYORHALE.LOCAL-S-1-5-32-544",
+     "PrincipalType": "Group",
+     "RightName": "WriteDacl",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "PRYORHALE.LOCAL-S-1-5-32-544",
+     "PrincipalType": "Group",
+     "RightName": "WriteOwner",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "PRYORHALE.LOCAL-S-1-5-32-544",
+     "PrincipalType": "Group",
+     "RightName": "GenericAll",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "S-1-5-21-2286421305-1841789134-3517623890-512",
+     "PrincipalType": "Group",
+     "RightName": "Owns",
+     "IsInherited": false
+    },
+    {
+     "PrincipalSID": "S-1-5-21-2286421305-1841789134-3517623890-1102",
+     "PrincipalType": "Group",
+     "RightName": "AddMember",
+     "IsInherited": false
+    }
+   ],
+   "IsDeleted": false,
+   "IsACLProtected": false
+  },
+  {
+   "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1115",
+   "Properties": {
+    "domain": "PRYORHALE.LOCAL",
+    "name": "BIM COORDINATORS@PRYORHALE.LOCAL",
+    "distinguishedname": "CN=BIM Coordinators,OU=Design,OU=Engineering,DC=pryorhale,DC=local",
+    "domainsid": "S-1-5-21-2286421305-1841789134-3517623890",
+    "samaccountname": "BIM Coordinators",
+    "description": "Revit model coordinators. Read/write on \\\\FS-01\\Models.",
+    "admincount": false,
+    "whencreated": 1696928400,
+    "highvalue": false
+   },
+   "Members": [
+    {
+     "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1151",
+     "ObjectType": "User"
+    },
+    {
+     "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1152",
+     "ObjectType": "User"
+    },
+    {
+     "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1154",
+     "ObjectType": "User"
+    },
+    {
+     "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1172",
+     "ObjectType": "User"
+    },
+    {
+     "ObjectIdentifier": "S-1-5-21-2286421305-1841789134-3517623890-1191",
+     "ObjectType": "User"
+    }
+   ],
+   "ContainedBy": {
+    "ObjectIdentifier": "EF34C41B-E1F1-43DC-A684-19575F27BA5B",
+    "ObjectType": "OU"
+   },
+   "Aces": [
+    {
+     "PrincipalSID": "S-1-5-21-2286421305-1841789134-3517623890-512",
+     "PrincipalType": "Group",
+     "RightName": "GenericAll",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "S-1-5-21-2286421305-1841789134-3517623890-519",
+     "PrincipalType": "Group",
+     "RightName": "GenericAll",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "PRYORHALE.LOCAL-S-1-5-32-544",
+     "PrincipalType": "Group",
+     "RightName": "WriteDacl",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "PRYORHALE.LOCAL-S-1-5-32-544",
+     "PrincipalType": "Group",
+     "RightName": "WriteOwner",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "PRYORHALE.LOCAL-S-1-5-32-544",
+     "PrincipalType": "Group",
+     "RightName": "GenericAll",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "S-1-5-21-2286421305-1841789134-3517623890-512",
+     "PrincipalType": "Group",
+     "RightName": "Owns",
+     "IsInherited": false
+    },
+    {
+     "PrincipalSID": "S-1-5-21-2286421305-1841789134-3517623890-1102",
+     "PrincipalType": "Group",
+     "RightName": "AddMember",
+     "IsInherited": false
+    }
+   ],
+   "IsDeleted": false,
+   "IsACLProtected": false
+  }
+ ],
+ "meta": {
+  "methods": 1046527,
+  "type": "groups",
+  "count": 26,
+  "version": 6
+ }
+}

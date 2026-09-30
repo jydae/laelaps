@@ -1,0 +1,83 @@
+{
+  "data": [
+    {
+      "ObjectIdentifier": "A1A10000-0000-0000-0000-0000000000OU",
+      "Properties": {
+        "name": "CONTRACTORS@NORTHGATE.LOCAL",
+        "domain": "NORTHGATE.LOCAL",
+        "domainsid": "S-1-5-21-4187502233-2849013567-771402918",
+        "distinguishedname": "OU=CONTRACTORS,DC=NORTHGATE,DC=LOCAL",
+        "blocksinheritance": false
+      },
+      "Aces": [],
+      "Links": [
+        {
+          "GUID": "B1B10000-0000-0000-0000-000000000GPO",
+          "IsEnforced": false
+        }
+      ],
+      "ContainedBy": {
+        "ObjectIdentifier": "S-1-5-21-4187502233-2849013567-771402918",
+        "ObjectType": "Domain"
+      },
+      "ChildObjects": []
+    },
+    {
+      "ObjectIdentifier": "A2A20000-0000-0000-0000-0000000000OU",
+      "Properties": {
+        "name": "STAFF@NORTHGATE.LOCAL",
+        "domain": "NORTHGATE.LOCAL",
+        "domainsid": "S-1-5-21-4187502233-2849013567-771402918",
+        "distinguishedname": "OU=STAFF,DC=NORTHGATE,DC=LOCAL",
+        "blocksinheritance": false
+      },
+      "Aces": [],
+      "Links": [
+        {
+          "GUID": "B1B10000-0000-0000-0000-000000000GPO",
+          "IsEnforced": false
+        }
+      ],
+      "ContainedBy": {
+        "ObjectIdentifier": "S-1-5-21-4187502233-2849013567-771402918",
+        "ObjectType": "Domain"
+      },
+      "ChildObjects": []
+    },
+    {
+      "ObjectIdentifier": "A3A30000-0000-0000-0000-0000000000OU",
+      "Properties": {
+        "name": "RELEASE-ENG@NORTHGATE.LOCAL",
+        "domain": "NORTHGATE.LOCAL",
+        "domainsid": "S-1-5-21-4187502233-2849013567-771402918",
+        "distinguishedname": "OU=RELEASE-ENG,DC=NORTHGATE,DC=LOCAL",
+        "blocksinheritance": false
+      },
+      "Aces": [
+        {
+          "PrincipalSID": "S-1-5-21-4187502233-2849013567-771402918-1102",
+          "PrincipalType": "User",
+          "RightName": "GenericAll",
+          "IsInherited": false
+        }
+      ],
+      "Links": [
+        {
+          "GUID": "B1B10000-0000-0000-0000-000000000GPO",
+          "IsEnforced": false
+        }
+      ],
+      "ContainedBy": {
+        "ObjectIdentifier": "S-1-5-21-4187502233-2849013567-771402918",
+        "ObjectType": "Domain"
+      },
+      "ChildObjects": []
+    }
+  ],
+  "meta": {
+    "type": "ous",
+    "count": 3,
+    "version": 6,
+    "methods": 0
+  }
+}

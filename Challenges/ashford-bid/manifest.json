@@ -1,0 +1,154 @@
+{
+ "id": "ashford-bid",
+ "title": "The Ashford Bid",
+ "difficulty": "easy",
+ "blurb": "Someone read the sealed bid on Saturday night.",
+ "brief": "On Friday evening Pryor & Hale sealed its bid for the Ashford Viaduct, the largest contract the firm had chased in years. On Sunday morning it lost. Radley Brothers had come in just under Pryor & Hale's price. Nobody guesses that closely. Someone read the bid and passed it on. It was kept in one folder on the file server, and only a small group of people could open it. You are part of the response team in charge of investigating the incident. Cecily Trent, the bid manager, raised the alarm: on Sunday morning she found a name on the project's group that had not been there on Friday.",
+ "start": "find users named \"CECILY.TRENT\"",
+ "epilogue": "Gerald Vane, the Sales Director. He had brought the Ashford tender in, so he was made the sponsor of the team. A sponsor gets one small right that nobody thinks about: he can add a name to the team's group. On Saturday night he added his own. At 02:41 he opened the folder from his laptop and read the bid. On 1 April he starts a new job at Radley Brothers. The others: Arthur Penrose was angry about a promotion and could open the folder, but went home at 17:52. Roger Blythe's contract was ending and he was on the team, but he was not on the server that night. Margaret Lisle could read anything on the server and had a session open, but she logged on at 18:10 and left for a week's holiday. The backup account was there at 01:00, as it is every night. Edmund Carey was still listed on the team, but his account was disabled two weeks ago. Means, opportunity, motive. Only one name has all three.",
+ "files": [
+  "20260315080000_domains.json",
+  "20260315080000_containers.json",
+  "20260315080000_ous.json",
+  "20260315080000_gpos.json",
+  "20260315080000_groups.json",
+  "20260315080000_computers.json",
+  "20260315080000_users.json"
+ ],
+ "questions": [
+  {
+   "ask": "Start with the domain itself. What is its name?",
+   "hints": [
+    {
+     "technique": "The domain object",
+     "text": "Every dump has one Domain object, and everything else sits under it. On the Graph tab, pick the database and open the Domain panel; the name is at the top. `find domains` draws it on its own."
+    }
+   ],
+   "answers": [
+    "139f990c002716f718e3f1904fea4da566876a34df34b4261f8b340bb00bd25b",
+    "5ea9e560c59e045db931f5ade92a175cb7433e0127ba3d5dda08200fce41fd57"
+   ]
+  },
+  {
+   "ask": "The servers are kept together in one organisational unit (OU). What is that OU called?",
+   "hints": [
+    {
+     "technique": "Organisational units",
+     "text": "OUs are objects too, and each has a description of what it holds. `find ous` lists all of them. An OU is joined to the objects inside it by Contains edges, so `find ous named \"SERVERS\" via Contains` draws the servers in it."
+    }
+   ],
+   "answers": [
+    "4d910b8ddc94ac35a14b37eac09ba00e383ac89fa5f1be2f19054324d5f963c6",
+    "563bba79ab1de9614a3c1dab5795b2c58f842633d515cbf973c17d8ee9c8ec55",
+    "8e3dc1afbc3ec556bb8b13749fb07bf6e431acf8a13f06e0f281566b60c4841f"
+   ]
+  },
+  {
+   "ask": "Policies are attached to OUs. Which Group Policy Object is linked to the Servers OU?",
+   "hints": [
+    {
+     "technique": "GPO links",
+     "text": "A policy is joined to an OU by a GPLink edge. Open the Servers OU and show what points into it, or write `find ous named \"SERVERS\" via GPLink`. The policy's description says what it does."
+    }
+   ],
+   "answers": [
+    "1045441af97cce952502c6da2cd8a218f84b7946bac6ab20f9cdda5b351c81fe",
+    "350b6653db6cb6a8b873f8a759da01206512d9f2e3c084abb5eb9cb6692f7caa"
+   ]
+  },
+  {
+   "ask": "The bid was on the file server. Which computer is the file server?",
+   "hints": [
+    {
+     "technique": "Computer objects",
+     "text": "There are eight machines in the Servers OU. Open each one and read its description in the object panel. The file server says what it is, and how its project folders are protected."
+    }
+   ],
+   "answers": [
+    "361eb4772522bd8d5f33d74d20b199eac2d97fa3359f40f5eea939cff0961c43",
+    "75cc4b0159a67ad94b0820f0bfa3258189662eb5c284367bd0253fb26ed1bc9d",
+    "98eca56beaf62c4f90da71f790fc20e9719647a6feaa1589c2c91b87b6ef1a5c"
+   ]
+  },
+  {
+   "ask": "Only one group could open the Ashford folder. Which group?",
+   "hints": [
+    {
+     "technique": "Groups",
+     "text": "The file server's description tells you how the project groups are named. Search for the Ashford group, or `find groups named \"ASHFORD\"`, and read its description. It names the folder and says who may change its members."
+    }
+   ],
+   "answers": [
+    "5f58cb653fafb5e078589dfce6f7548f2cd27095e93290275f8d7ecee8e8566b",
+    "875d886f051c75479d909d0c4b8b770140c767ffc8e3043fe141edb5578d6998"
+   ]
+  },
+  {
+   "ask": "How many members does that group have?",
+   "hints": [
+    {
+     "technique": "Group membership",
+     "text": "A member is joined to a group by a MemberOf edge. Open the group and show what points into it, or `reach groups named \"PROJECT ASHFORD\" via MemberOf within 1`, and count the users. One of them is a disabled account that was never removed. Remember that for later."
+    }
+   ],
+   "answers": [
+    "3ba8d02b16fd2a01c1a8ba1a1f036d7ce386ed953696fa57331c2ac48a80b255",
+    "7902699be42c8a8e46fbbb4501726517e86b22c56a189f7625a6da49081b2451"
+   ]
+  },
+  {
+   "ask": "How many accounts had a session on the file server when the snapshot was taken?",
+   "hints": [
+    {
+     "technique": "Sessions",
+     "text": "The collector records who is logged on to each computer as HasSession edges, from the computer to the account. Open FS-01 and show what it points to, or `find computers named \"FS-01\" via HasSession`. Count them all, including service accounts."
+    }
+   ],
+   "answers": [
+    "4e07408562bedb8b60ce05c1decfe3ad16b72230967de01f640b7e4729b49fce",
+    "8b5b9db0c13db24256c829aa364aa90c6d2eba318b9232a4ab9313b954d3555f"
+   ]
+  },
+  {
+   "ask": "How many people (not service accounts) last logged on between 00:00 and 06:00 on Sunday 15 March?",
+   "hints": [
+    {
+     "technique": "Timestamps as ranges",
+     "text": "lastlogon is stored as Unix epoch seconds, and the query box on the Graph tab compares them as numbers. Midnight on 15 March 2026 (UTC) is 1773532800; 06:00 is 1773554400. `find users where lastlogon > 1773532800 and where lastlogon < 1773554400` lists everyone who logged on in that window. The backup account logs on at 01:00 every night and will appear; it is not a person, so do not count it."
+    }
+   ],
+   "answers": [
+    "3fc4ccfe745870e2c0d99f71f30ff0656c8dedd41cc1d7d3d376b0dbe685e2f3",
+    "d4735e3a265e16eee03f59718b9b5d03019c07d8b6c51f90da3a666eec13ab35"
+   ]
+  },
+  {
+   "ask": "One of those two people was not supposed to be on the team. Which right on the Project Ashford group let that person add themselves to it?",
+   "hints": [
+    {
+     "technique": "ACLs as edges",
+     "text": "Every access-control entry on an object is an edge into it, named after the right it grants. Open the Project Ashford group and show what points into it. Next to the MemberOf edges you will see control edges from the accounts that can change the group. `reach groups named \"PROJECT ASHFORD\" via AddMember, GenericWrite, GenericAll within 1` draws only those."
+    }
+   ],
+   "answers": [
+    "4b2dfe6735b6a875124389821e0498c2d275047457cbcb4de3f34b81591d6593",
+    "5e40876cebda95a725286dc1dca29fb850dc51f2c93156a12c41a5537e9c1a61"
+   ]
+  },
+  {
+   "ask": "You know who could, and who was there. Now the motive: read that person's description, and name the person who read the bid.",
+   "hints": [
+    {
+     "technique": "Descriptions",
+     "text": "Descriptions, titles and group names are where a directory keeps its stories. Open the account that had the right and the session, and read its description. Someone who is leaving to join the firm that won the contract has a motive."
+    }
+   ],
+   "answers": [
+    "0f7e5f46cfee299200e0c96bffbac2c9c91c0570ae8fab20825851758a974e4d",
+    "14415a33a7620dd933ae2334d860f41586b6e39208c1020035cc83e4af414421",
+    "67b6a6b3785f0ce05f692e11e84c4c6196872760cd247c3ce2e66dd008381d19",
+    "9164b3a5c9d00905441bd137e3420cc78d84a74dc4b72fe35c8b5f45c5b28d10"
+   ]
+  }
+ ]
+}

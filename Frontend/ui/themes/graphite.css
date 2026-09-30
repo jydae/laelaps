@@ -1,0 +1,51 @@
+:root,
+:root[data-theme="graphite"] {
+  --bg: #060606;
+  --plate: #090909;
+  --panel: #101010;
+  --well: #080808;
+  --ground: #181818;
+
+  --fg: #ede4d3;
+  --dim: #a99a89;
+  --text-off: color-mix(in srgb, #ede4d3 30%, transparent);
+  --label: #cfc6b6;
+  --label-dim: #7f786e;
+
+  --line: #2e2e2e;
+  --line-strong: #404040;
+  --rim: #404040;
+  --rule: #404040;
+  --rule-strong: #5a5a5a;
+  --ornament: #8a847b;
+
+  --btn: #101010;
+  --btn-hover: #181818;
+  --btn-rim: #404040;
+  --btn-rim-hover: #636363;
+  --btn-off: #222222;
+
+  --on: #ede4d3;
+  --on-rim: #ede4d3;
+  --on-text: #060606;
+  --row-hover: #1c1c1c;
+  --row-on: #242424;
+  --cell-on: #242424;
+
+  --danger: #d63c22;
+  --danger-ground: #4a160e;
+
+  --accent: var(--logo-oxblood-light);
+  --motif-on: var(--accent);
+  --motif-lit: 0.9;
+  --focus: color-mix(in srgb, #ede4d3 60%, transparent);
+  --selection: #ede4d3;
+  --selection-text: #060606;
+
+  --lift: inset 0 1px 0 0 rgba(237, 228, 211, 0.06);
+  --elevation: 0 12px 32px rgba(0, 0, 0, 0.75);
+  --head: #171717;
+  --raised: #141414;
+  --card: #1c1c1c;
+  --edge: #8c8c8c;
+}

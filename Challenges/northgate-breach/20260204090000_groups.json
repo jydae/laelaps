@@ -1,0 +1,266 @@
+{
+  "data": [
+    {
+      "ObjectIdentifier": "S-1-5-21-4187502233-2849013567-771402918-512",
+      "Properties": {
+        "name": "DOMAIN ADMINS@NORTHGATE.LOCAL",
+        "domain": "NORTHGATE.LOCAL",
+        "domainsid": "S-1-5-21-4187502233-2849013567-771402918",
+        "distinguishedname": "CN=DOMAIN ADMINS,CN=USERS,DC=NORTHGATE,DC=LOCAL",
+        "admincount": true
+      },
+      "Members": [
+        {
+          "ObjectIdentifier": "S-1-5-21-4187502233-2849013567-771402918-500",
+          "ObjectType": "User"
+        }
+      ],
+      "Aces": [],
+      "ContainedBy": {
+        "ObjectIdentifier": "A2A20000-0000-0000-0000-0000000000OU",
+        "ObjectType": "OU"
+      }
+    },
+    {
+      "ObjectIdentifier": "S-1-5-21-4187502233-2849013567-771402918-519",
+      "Properties": {
+        "name": "ENTERPRISE ADMINS@NORTHGATE.LOCAL",
+        "domain": "NORTHGATE.LOCAL",
+        "domainsid": "S-1-5-21-4187502233-2849013567-771402918",
+        "distinguishedname": "CN=ENTERPRISE ADMINS,CN=USERS,DC=NORTHGATE,DC=LOCAL",
+        "admincount": true
+      },
+      "Members": [
+        {
+          "ObjectIdentifier": "S-1-5-21-4187502233-2849013567-771402918-512",
+          "ObjectType": "Group"
+        }
+      ],
+      "Aces": [],
+      "ContainedBy": {
+        "ObjectIdentifier": "A2A20000-0000-0000-0000-0000000000OU",
+        "ObjectType": "OU"
+      }
+    },
+    {
+      "ObjectIdentifier": "S-1-5-21-4187502233-2849013567-771402918-516",
+      "Properties": {
+        "name": "DOMAIN CONTROLLERS@NORTHGATE.LOCAL",
+        "domain": "NORTHGATE.LOCAL",
+        "domainsid": "S-1-5-21-4187502233-2849013567-771402918",
+        "distinguishedname": "CN=DOMAIN CONTROLLERS,CN=USERS,DC=NORTHGATE,DC=LOCAL",
+        "admincount": true
+      },
+      "Members": [
+        {
+          "ObjectIdentifier": "S-1-5-21-4187502233-2849013567-771402918-1001",
+          "ObjectType": "Computer"
+        }
+      ],
+      "Aces": [],
+      "ContainedBy": {
+        "ObjectIdentifier": "A2A20000-0000-0000-0000-0000000000OU",
+        "ObjectType": "OU"
+      }
+    },
+    {
+      "ObjectIdentifier": "S-1-5-21-4187502233-2849013567-771402918-513",
+      "Properties": {
+        "name": "DOMAIN USERS@NORTHGATE.LOCAL",
+        "domain": "NORTHGATE.LOCAL",
+        "domainsid": "S-1-5-21-4187502233-2849013567-771402918",
+        "distinguishedname": "CN=DOMAIN USERS,CN=USERS,DC=NORTHGATE,DC=LOCAL",
+        "admincount": false
+      },
+      "Members": [
+        {
+          "ObjectIdentifier": "S-1-5-21-4187502233-2849013567-771402918-1101",
+          "ObjectType": "User"
+        },
+        {
+          "ObjectIdentifier": "S-1-5-21-4187502233-2849013567-771402918-1201",
+          "ObjectType": "User"
+        },
+        {
+          "ObjectIdentifier": "S-1-5-21-4187502233-2849013567-771402918-1202",
+          "ObjectType": "User"
+        },
+        {
+          "ObjectIdentifier": "S-1-5-21-4187502233-2849013567-771402918-1102",
+          "ObjectType": "User"
+        },
+        {
+          "ObjectIdentifier": "S-1-5-21-4187502233-2849013567-771402918-1103",
+          "ObjectType": "User"
+        },
+        {
+          "ObjectIdentifier": "S-1-5-21-4187502233-2849013567-771402918-1204",
+          "ObjectType": "User"
+        },
+        {
+          "ObjectIdentifier": "S-1-5-21-4187502233-2849013567-771402918-500",
+          "ObjectType": "User"
+        },
+        {
+          "ObjectIdentifier": "S-1-5-21-4187502233-2849013567-771402918-1500",
+          "ObjectType": "User"
+        },
+        {
+          "ObjectIdentifier": "S-1-5-21-4187502233-2849013567-771402918-1501",
+          "ObjectType": "User"
+        },
+        {
+          "ObjectIdentifier": "S-1-5-21-4187502233-2849013567-771402918-1502",
+          "ObjectType": "User"
+        },
+        {
+          "ObjectIdentifier": "S-1-5-21-4187502233-2849013567-771402918-1503",
+          "ObjectType": "User"
+        },
+        {
+          "ObjectIdentifier": "S-1-5-21-4187502233-2849013567-771402918-1504",
+          "ObjectType": "User"
+        },
+        {
+          "ObjectIdentifier": "S-1-5-21-4187502233-2849013567-771402918-1505",
+          "ObjectType": "User"
+        }
+      ],
+      "Aces": [],
+      "ContainedBy": {
+        "ObjectIdentifier": "A2A20000-0000-0000-0000-0000000000OU",
+        "ObjectType": "OU"
+      }
+    },
+    {
+      "ObjectIdentifier": "S-1-5-32-544",
+      "Properties": {
+        "name": "ADMINISTRATORS@NORTHGATE.LOCAL",
+        "domain": "NORTHGATE.LOCAL",
+        "domainsid": "S-1-5-21-4187502233-2849013567-771402918",
+        "distinguishedname": "CN=ADMINISTRATORS,CN=USERS,DC=NORTHGATE,DC=LOCAL",
+        "admincount": false
+      },
+      "Members": [
+        {
+          "ObjectIdentifier": "S-1-5-21-4187502233-2849013567-771402918-512",
+          "ObjectType": "Group"
+        }
+      ],
+      "Aces": [],
+      "ContainedBy": {
+        "ObjectIdentifier": "S-1-5-32",
+        "ObjectType": "Base"
+      }
+    },
+    {
+      "ObjectIdentifier": "S-1-5-32-551",
+      "Properties": {
+        "name": "BACKUP OPERATORS@NORTHGATE.LOCAL",
+        "domain": "NORTHGATE.LOCAL",
+        "domainsid": "S-1-5-21-4187502233-2849013567-771402918",
+        "distinguishedname": "CN=BACKUP OPERATORS,CN=USERS,DC=NORTHGATE,DC=LOCAL",
+        "admincount": false
+      },
+      "Members": [],
+      "Aces": [],
+      "ContainedBy": {
+        "ObjectIdentifier": "S-1-5-32",
+        "ObjectType": "Base"
+      }
+    },
+    {
+      "ObjectIdentifier": "S-1-5-21-4187502233-2849013567-771402918-1410",
+      "Properties": {
+        "name": "STAFF-ALL@NORTHGATE.LOCAL",
+        "domain": "NORTHGATE.LOCAL",
+        "domainsid": "S-1-5-21-4187502233-2849013567-771402918",
+        "distinguishedname": "CN=STAFF-ALL,CN=USERS,DC=NORTHGATE,DC=LOCAL",
+        "admincount": false
+      },
+      "Members": [
+        {
+          "ObjectIdentifier": "S-1-5-21-4187502233-2849013567-771402918-1500",
+          "ObjectType": "User"
+        },
+        {
+          "ObjectIdentifier": "S-1-5-21-4187502233-2849013567-771402918-1501",
+          "ObjectType": "User"
+        },
+        {
+          "ObjectIdentifier": "S-1-5-21-4187502233-2849013567-771402918-1502",
+          "ObjectType": "User"
+        },
+        {
+          "ObjectIdentifier": "S-1-5-21-4187502233-2849013567-771402918-1503",
+          "ObjectType": "User"
+        },
+        {
+          "ObjectIdentifier": "S-1-5-21-4187502233-2849013567-771402918-1504",
+          "ObjectType": "User"
+        },
+        {
+          "ObjectIdentifier": "S-1-5-21-4187502233-2849013567-771402918-1505",
+          "ObjectType": "User"
+        }
+      ],
+      "Aces": [],
+      "ContainedBy": {
+        "ObjectIdentifier": "A2A20000-0000-0000-0000-0000000000OU",
+        "ObjectType": "OU"
+      }
+    },
+    {
+      "ObjectIdentifier": "S-1-5-21-4187502233-2849013567-771402918-1401",
+      "Properties": {
+        "name": "DATA-PIPELINE@NORTHGATE.LOCAL",
+        "domain": "NORTHGATE.LOCAL",
+        "domainsid": "S-1-5-21-4187502233-2849013567-771402918",
+        "distinguishedname": "CN=DATA-PIPELINE,CN=USERS,DC=NORTHGATE,DC=LOCAL",
+        "admincount": false
+      },
+      "Members": [],
+      "Aces": [
+        {
+          "PrincipalSID": "S-1-5-21-4187502233-2849013567-771402918-1201",
+          "PrincipalType": "User",
+          "RightName": "AddSelf",
+          "IsInherited": false
+        }
+      ],
+      "ContainedBy": {
+        "ObjectIdentifier": "A2A20000-0000-0000-0000-0000000000OU",
+        "ObjectType": "OU"
+      }
+    },
+    {
+      "ObjectIdentifier": "S-1-5-21-4187502233-2849013567-771402918-1402",
+      "Properties": {
+        "name": "TIER0-RESPONSE@NORTHGATE.LOCAL",
+        "domain": "NORTHGATE.LOCAL",
+        "domainsid": "S-1-5-21-4187502233-2849013567-771402918",
+        "distinguishedname": "CN=TIER0-RESPONSE,CN=USERS,DC=NORTHGATE,DC=LOCAL",
+        "admincount": false
+      },
+      "Members": [],
+      "Aces": [
+        {
+          "PrincipalSID": "S-1-5-21-4187502233-2849013567-771402918-1204",
+          "PrincipalType": "User",
+          "RightName": "AddMember",
+          "IsInherited": false
+        }
+      ],
+      "ContainedBy": {
+        "ObjectIdentifier": "A2A20000-0000-0000-0000-0000000000OU",
+        "ObjectType": "OU"
+      }
+    }
+  ],
+  "meta": {
+    "type": "groups",
+    "count": 9,
+    "version": 6,
+    "methods": 0
+  }
+}

@@ -1,0 +1,526 @@
+{
+ "data": [
+  {
+   "ObjectIdentifier": "406756D8-DD74-452A-9807-4687FD958193",
+   "Properties": {
+    "domain": "PRYORHALE.LOCAL",
+    "name": "DEFAULT DOMAIN POLICY@PRYORHALE.LOCAL",
+    "distinguishedname": "CN={406756D8-DD74-452A-9807-4687FD958193},CN=Policies,CN=System,DC=pryorhale,DC=local",
+    "domainsid": "S-1-5-21-2286421305-1841789134-3517623890",
+    "description": "Password and lockout policy for the domain. Do not edit \u2014 see CHG-0001.",
+    "gpcpath": "\\\\pryorhale.local\\SysVol\\pryorhale.local\\Policies\\{406756D8-DD74-452A-9807-4687FD958193}",
+    "whencreated": 1546855200,
+    "highvalue": true
+   },
+   "ContainedBy": {
+    "ObjectIdentifier": "616BB820-D2A9-4620-9C2C-9CB1180490F7",
+    "ObjectType": "Container"
+   },
+   "Aces": [
+    {
+     "PrincipalSID": "S-1-5-21-2286421305-1841789134-3517623890-512",
+     "PrincipalType": "Group",
+     "RightName": "GenericAll",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "S-1-5-21-2286421305-1841789134-3517623890-519",
+     "PrincipalType": "Group",
+     "RightName": "GenericAll",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "PRYORHALE.LOCAL-S-1-5-32-544",
+     "PrincipalType": "Group",
+     "RightName": "WriteDacl",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "PRYORHALE.LOCAL-S-1-5-32-544",
+     "PrincipalType": "Group",
+     "RightName": "WriteOwner",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "PRYORHALE.LOCAL-S-1-5-32-544",
+     "PrincipalType": "Group",
+     "RightName": "GenericAll",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "S-1-5-21-2286421305-1841789134-3517623890-512",
+     "PrincipalType": "Group",
+     "RightName": "Owns",
+     "IsInherited": false
+    },
+    {
+     "PrincipalSID": "S-1-5-21-2286421305-1841789134-3517623890-520",
+     "PrincipalType": "Group",
+     "RightName": "GenericWrite",
+     "IsInherited": false
+    }
+   ],
+   "IsDeleted": false,
+   "IsACLProtected": false
+  },
+  {
+   "ObjectIdentifier": "4D884B0E-1AB9-4C0A-93B7-06811FC5083C",
+   "Properties": {
+    "domain": "PRYORHALE.LOCAL",
+    "name": "DEFAULT DOMAIN CONTROLLERS POLICY@PRYORHALE.LOCAL",
+    "distinguishedname": "CN={4D884B0E-1AB9-4C0A-93B7-06811FC5083C},CN=Policies,CN=System,DC=pryorhale,DC=local",
+    "domainsid": "S-1-5-21-2286421305-1841789134-3517623890",
+    "description": "User rights assignment for domain controllers.",
+    "gpcpath": "\\\\pryorhale.local\\SysVol\\pryorhale.local\\Policies\\{4D884B0E-1AB9-4C0A-93B7-06811FC5083C}",
+    "whencreated": 1549447200,
+    "highvalue": true
+   },
+   "ContainedBy": {
+    "ObjectIdentifier": "616BB820-D2A9-4620-9C2C-9CB1180490F7",
+    "ObjectType": "Container"
+   },
+   "Aces": [
+    {
+     "PrincipalSID": "S-1-5-21-2286421305-1841789134-3517623890-512",
+     "PrincipalType": "Group",
+     "RightName": "GenericAll",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "S-1-5-21-2286421305-1841789134-3517623890-519",
+     "PrincipalType": "Group",
+     "RightName": "GenericAll",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "PRYORHALE.LOCAL-S-1-5-32-544",
+     "PrincipalType": "Group",
+     "RightName": "WriteDacl",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "PRYORHALE.LOCAL-S-1-5-32-544",
+     "PrincipalType": "Group",
+     "RightName": "WriteOwner",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "PRYORHALE.LOCAL-S-1-5-32-544",
+     "PrincipalType": "Group",
+     "RightName": "GenericAll",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "S-1-5-21-2286421305-1841789134-3517623890-512",
+     "PrincipalType": "Group",
+     "RightName": "Owns",
+     "IsInherited": false
+    },
+    {
+     "PrincipalSID": "S-1-5-21-2286421305-1841789134-3517623890-520",
+     "PrincipalType": "Group",
+     "RightName": "GenericWrite",
+     "IsInherited": false
+    }
+   ],
+   "IsDeleted": false,
+   "IsACLProtected": false
+  },
+  {
+   "ObjectIdentifier": "B55BAB23-CBCA-4495-8EFF-1F825FB61323",
+   "Properties": {
+    "domain": "PRYORHALE.LOCAL",
+    "name": "WORKSTATION BASELINE@PRYORHALE.LOCAL",
+    "distinguishedname": "CN={B55BAB23-CBCA-4495-8EFF-1F825FB61323},CN=Policies,CN=System,DC=pryorhale,DC=local",
+    "domainsid": "S-1-5-21-2286421305-1841789134-3517623890",
+    "description": "CIS L1 baseline for Windows 11 workstations. Owner: IT (M. Lisle).",
+    "gpcpath": "\\\\pryorhale.local\\SysVol\\pryorhale.local\\Policies\\{B55BAB23-CBCA-4495-8EFF-1F825FB61323}",
+    "whencreated": 1552039200,
+    "highvalue": false
+   },
+   "ContainedBy": {
+    "ObjectIdentifier": "616BB820-D2A9-4620-9C2C-9CB1180490F7",
+    "ObjectType": "Container"
+   },
+   "Aces": [
+    {
+     "PrincipalSID": "S-1-5-21-2286421305-1841789134-3517623890-512",
+     "PrincipalType": "Group",
+     "RightName": "GenericAll",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "S-1-5-21-2286421305-1841789134-3517623890-519",
+     "PrincipalType": "Group",
+     "RightName": "GenericAll",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "PRYORHALE.LOCAL-S-1-5-32-544",
+     "PrincipalType": "Group",
+     "RightName": "WriteDacl",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "PRYORHALE.LOCAL-S-1-5-32-544",
+     "PrincipalType": "Group",
+     "RightName": "WriteOwner",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "PRYORHALE.LOCAL-S-1-5-32-544",
+     "PrincipalType": "Group",
+     "RightName": "GenericAll",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "S-1-5-21-2286421305-1841789134-3517623890-512",
+     "PrincipalType": "Group",
+     "RightName": "Owns",
+     "IsInherited": false
+    },
+    {
+     "PrincipalSID": "S-1-5-21-2286421305-1841789134-3517623890-520",
+     "PrincipalType": "Group",
+     "RightName": "GenericWrite",
+     "IsInherited": false
+    },
+    {
+     "PrincipalSID": "S-1-5-21-2286421305-1841789134-3517623890-1101",
+     "PrincipalType": "Group",
+     "RightName": "GenericWrite",
+     "IsInherited": false
+    }
+   ],
+   "IsDeleted": false,
+   "IsACLProtected": false
+  },
+  {
+   "ObjectIdentifier": "05221D9D-BA0B-49FA-A072-5ABEBDD4412C",
+   "Properties": {
+    "domain": "PRYORHALE.LOCAL",
+    "name": "SERVER HARDENING@PRYORHALE.LOCAL",
+    "distinguishedname": "CN={05221D9D-BA0B-49FA-A072-5ABEBDD4412C},CN=Policies,CN=System,DC=pryorhale,DC=local",
+    "domainsid": "S-1-5-21-2286421305-1841789134-3517623890",
+    "description": "Member server baseline. Denies interactive logon to non-administrative staff; RDP restricted to the SRV-* admin groups. Owner: IT (A. Crane).",
+    "gpcpath": "\\\\pryorhale.local\\SysVol\\pryorhale.local\\Policies\\{05221D9D-BA0B-49FA-A072-5ABEBDD4412C}",
+    "whencreated": 1554631200,
+    "highvalue": false
+   },
+   "ContainedBy": {
+    "ObjectIdentifier": "616BB820-D2A9-4620-9C2C-9CB1180490F7",
+    "ObjectType": "Container"
+   },
+   "Aces": [
+    {
+     "PrincipalSID": "S-1-5-21-2286421305-1841789134-3517623890-512",
+     "PrincipalType": "Group",
+     "RightName": "GenericAll",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "S-1-5-21-2286421305-1841789134-3517623890-519",
+     "PrincipalType": "Group",
+     "RightName": "GenericAll",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "PRYORHALE.LOCAL-S-1-5-32-544",
+     "PrincipalType": "Group",
+     "RightName": "WriteDacl",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "PRYORHALE.LOCAL-S-1-5-32-544",
+     "PrincipalType": "Group",
+     "RightName": "WriteOwner",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "PRYORHALE.LOCAL-S-1-5-32-544",
+     "PrincipalType": "Group",
+     "RightName": "GenericAll",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "S-1-5-21-2286421305-1841789134-3517623890-512",
+     "PrincipalType": "Group",
+     "RightName": "Owns",
+     "IsInherited": false
+    },
+    {
+     "PrincipalSID": "S-1-5-21-2286421305-1841789134-3517623890-520",
+     "PrincipalType": "Group",
+     "RightName": "GenericWrite",
+     "IsInherited": false
+    }
+   ],
+   "IsDeleted": false,
+   "IsACLProtected": false
+  },
+  {
+   "ObjectIdentifier": "BFB43FDB-D63C-4F56-A674-30EF024B6539",
+   "Properties": {
+    "domain": "PRYORHALE.LOCAL",
+    "name": "FINANCE DRIVE MAPPING@PRYORHALE.LOCAL",
+    "distinguishedname": "CN={BFB43FDB-D63C-4F56-A674-30EF024B6539},CN=Policies,CN=System,DC=pryorhale,DC=local",
+    "domainsid": "S-1-5-21-2286421305-1841789134-3517623890",
+    "description": "Maps F: to \\\\FS-01\\Finance for Finance staff.",
+    "gpcpath": "\\\\pryorhale.local\\SysVol\\pryorhale.local\\Policies\\{BFB43FDB-D63C-4F56-A674-30EF024B6539}",
+    "whencreated": 1557223200,
+    "highvalue": false
+   },
+   "ContainedBy": {
+    "ObjectIdentifier": "616BB820-D2A9-4620-9C2C-9CB1180490F7",
+    "ObjectType": "Container"
+   },
+   "Aces": [
+    {
+     "PrincipalSID": "S-1-5-21-2286421305-1841789134-3517623890-512",
+     "PrincipalType": "Group",
+     "RightName": "GenericAll",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "S-1-5-21-2286421305-1841789134-3517623890-519",
+     "PrincipalType": "Group",
+     "RightName": "GenericAll",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "PRYORHALE.LOCAL-S-1-5-32-544",
+     "PrincipalType": "Group",
+     "RightName": "WriteDacl",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "PRYORHALE.LOCAL-S-1-5-32-544",
+     "PrincipalType": "Group",
+     "RightName": "WriteOwner",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "PRYORHALE.LOCAL-S-1-5-32-544",
+     "PrincipalType": "Group",
+     "RightName": "GenericAll",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "S-1-5-21-2286421305-1841789134-3517623890-512",
+     "PrincipalType": "Group",
+     "RightName": "Owns",
+     "IsInherited": false
+    },
+    {
+     "PrincipalSID": "S-1-5-21-2286421305-1841789134-3517623890-520",
+     "PrincipalType": "Group",
+     "RightName": "GenericWrite",
+     "IsInherited": false
+    }
+   ],
+   "IsDeleted": false,
+   "IsACLProtected": false
+  },
+  {
+   "ObjectIdentifier": "38BDC4C7-776C-4081-BC35-D1D4F2B2753C",
+   "Properties": {
+    "domain": "PRYORHALE.LOCAL",
+    "name": "CONTRACTOR RESTRICTIONS@PRYORHALE.LOCAL",
+    "distinguishedname": "CN={38BDC4C7-776C-4081-BC35-D1D4F2B2753C},CN=Policies,CN=System,DC=pryorhale,DC=local",
+    "domainsid": "S-1-5-21-2286421305-1841789134-3517623890",
+    "description": "Removable media blocked; no local admin; 20-minute screen lock. Applies to the Contractors OU.",
+    "gpcpath": "\\\\pryorhale.local\\SysVol\\pryorhale.local\\Policies\\{38BDC4C7-776C-4081-BC35-D1D4F2B2753C}",
+    "whencreated": 1559815200,
+    "highvalue": false
+   },
+   "ContainedBy": {
+    "ObjectIdentifier": "616BB820-D2A9-4620-9C2C-9CB1180490F7",
+    "ObjectType": "Container"
+   },
+   "Aces": [
+    {
+     "PrincipalSID": "S-1-5-21-2286421305-1841789134-3517623890-512",
+     "PrincipalType": "Group",
+     "RightName": "GenericAll",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "S-1-5-21-2286421305-1841789134-3517623890-519",
+     "PrincipalType": "Group",
+     "RightName": "GenericAll",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "PRYORHALE.LOCAL-S-1-5-32-544",
+     "PrincipalType": "Group",
+     "RightName": "WriteDacl",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "PRYORHALE.LOCAL-S-1-5-32-544",
+     "PrincipalType": "Group",
+     "RightName": "WriteOwner",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "PRYORHALE.LOCAL-S-1-5-32-544",
+     "PrincipalType": "Group",
+     "RightName": "GenericAll",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "S-1-5-21-2286421305-1841789134-3517623890-512",
+     "PrincipalType": "Group",
+     "RightName": "Owns",
+     "IsInherited": false
+    },
+    {
+     "PrincipalSID": "S-1-5-21-2286421305-1841789134-3517623890-520",
+     "PrincipalType": "Group",
+     "RightName": "GenericWrite",
+     "IsInherited": false
+    }
+   ],
+   "IsDeleted": false,
+   "IsACLProtected": false
+  },
+  {
+   "ObjectIdentifier": "EC6FC264-0D73-4C2C-B72B-0F9631E62C41",
+   "Properties": {
+    "domain": "PRYORHALE.LOCAL",
+    "name": "LAPTOP BITLOCKER@PRYORHALE.LOCAL",
+    "distinguishedname": "CN={EC6FC264-0D73-4C2C-B72B-0F9631E62C41},CN=Policies,CN=System,DC=pryorhale,DC=local",
+    "domainsid": "S-1-5-21-2286421305-1841789134-3517623890",
+    "description": "BitLocker with TPM+PIN on every laptop; recovery keys escrowed to AD.",
+    "gpcpath": "\\\\pryorhale.local\\SysVol\\pryorhale.local\\Policies\\{EC6FC264-0D73-4C2C-B72B-0F9631E62C41}",
+    "whencreated": 1562407200,
+    "highvalue": false
+   },
+   "ContainedBy": {
+    "ObjectIdentifier": "616BB820-D2A9-4620-9C2C-9CB1180490F7",
+    "ObjectType": "Container"
+   },
+   "Aces": [
+    {
+     "PrincipalSID": "S-1-5-21-2286421305-1841789134-3517623890-512",
+     "PrincipalType": "Group",
+     "RightName": "GenericAll",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "S-1-5-21-2286421305-1841789134-3517623890-519",
+     "PrincipalType": "Group",
+     "RightName": "GenericAll",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "PRYORHALE.LOCAL-S-1-5-32-544",
+     "PrincipalType": "Group",
+     "RightName": "WriteDacl",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "PRYORHALE.LOCAL-S-1-5-32-544",
+     "PrincipalType": "Group",
+     "RightName": "WriteOwner",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "PRYORHALE.LOCAL-S-1-5-32-544",
+     "PrincipalType": "Group",
+     "RightName": "GenericAll",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "S-1-5-21-2286421305-1841789134-3517623890-512",
+     "PrincipalType": "Group",
+     "RightName": "Owns",
+     "IsInherited": false
+    },
+    {
+     "PrincipalSID": "S-1-5-21-2286421305-1841789134-3517623890-520",
+     "PrincipalType": "Group",
+     "RightName": "GenericWrite",
+     "IsInherited": false
+    },
+    {
+     "PrincipalSID": "S-1-5-21-2286421305-1841789134-3517623890-1101",
+     "PrincipalType": "Group",
+     "RightName": "GenericWrite",
+     "IsInherited": false
+    }
+   ],
+   "IsDeleted": false,
+   "IsACLProtected": false
+  },
+  {
+   "ObjectIdentifier": "AEBEBAFE-8F2F-4D19-AC08-AC2D4C10FD62",
+   "Properties": {
+    "domain": "PRYORHALE.LOCAL",
+    "name": "LEGAL SCREEN LOCK@PRYORHALE.LOCAL",
+    "distinguishedname": "CN={AEBEBAFE-8F2F-4D19-AC08-AC2D4C10FD62},CN=Policies,CN=System,DC=pryorhale,DC=local",
+    "domainsid": "S-1-5-21-2286421305-1841789134-3517623890",
+    "description": "5-minute screen lock for Legal \u2014 client confidentiality requirement (LGL-22).",
+    "gpcpath": "\\\\pryorhale.local\\SysVol\\pryorhale.local\\Policies\\{AEBEBAFE-8F2F-4D19-AC08-AC2D4C10FD62}",
+    "whencreated": 1564999200,
+    "highvalue": false
+   },
+   "ContainedBy": {
+    "ObjectIdentifier": "616BB820-D2A9-4620-9C2C-9CB1180490F7",
+    "ObjectType": "Container"
+   },
+   "Aces": [
+    {
+     "PrincipalSID": "S-1-5-21-2286421305-1841789134-3517623890-512",
+     "PrincipalType": "Group",
+     "RightName": "GenericAll",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "S-1-5-21-2286421305-1841789134-3517623890-519",
+     "PrincipalType": "Group",
+     "RightName": "GenericAll",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "PRYORHALE.LOCAL-S-1-5-32-544",
+     "PrincipalType": "Group",
+     "RightName": "WriteDacl",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "PRYORHALE.LOCAL-S-1-5-32-544",
+     "PrincipalType": "Group",
+     "RightName": "WriteOwner",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "PRYORHALE.LOCAL-S-1-5-32-544",
+     "PrincipalType": "Group",
+     "RightName": "GenericAll",
+     "IsInherited": true
+    },
+    {
+     "PrincipalSID": "S-1-5-21-2286421305-1841789134-3517623890-512",
+     "PrincipalType": "Group",
+     "RightName": "Owns",
+     "IsInherited": false
+    },
+    {
+     "PrincipalSID": "S-1-5-21-2286421305-1841789134-3517623890-520",
+     "PrincipalType": "Group",
+     "RightName": "GenericWrite",
+     "IsInherited": false
+    }
+   ],
+   "IsDeleted": false,
+   "IsACLProtected": false
+  }
+ ],
+ "meta": {
+  "methods": 1046527,
+  "type": "gpos",
+  "count": 8,
+  "version": 6
+ }
+}

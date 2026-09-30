@@ -1,0 +1,440 @@
+.ingestor {
+  position: relative;
+  gap: var(--space-3);
+}
+
+.ing-drop {
+  flex: none;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  gap: var(--space-5);
+  min-height: 96px;
+  padding: var(--space-4) var(--space-5);
+  border: 1px dashed var(--line-strong);
+  transition: background var(--t) var(--ease), border-color var(--t) var(--ease);
+}
+
+.ing-drop.is-over {
+  background: var(--ground);
+  border-color: var(--fg);
+  border-style: solid;
+}
+
+.ing-drop.is-empty {
+  flex: 1 1 auto;
+  flex-direction: column;
+  justify-content: center;
+  gap: var(--space-4);
+  text-align: center;
+}
+
+.ing-drop-text {
+  flex: 1 1 auto;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.ing-drop.is-empty .ing-drop-text {
+  flex: none;
+  align-items: center;
+}
+
+.ing-drop-title {
+  font-size: var(--t-lead);
+  letter-spacing: 0.04em;
+  color: var(--fg);
+}
+
+.ing-drop-controls {
+  flex: none;
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.ing-drop-controls .ing-destination {
+  width: 240px;
+}
+
+.ing-status {
+  min-width: 0;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--t-small);
+  color: var(--fg);
+}
+
+.ing-status-text {
+  min-width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.ing-status-text.is-hint {
+  color: var(--dim);
+}
+
+.ing-drop.is-empty .ing-status {
+  justify-content: center;
+}
+
+.ing-status.is-fault .ing-status-text {
+  color: var(--danger);
+}
+
+.ing-status-bar {
+  flex: none;
+  width: 240px;
+}
+
+.ing-skipped {
+  max-width: 560px;
+  max-height: 320px;
+  overflow-y: auto;
+  padding: var(--space-2) var(--space-3);
+}
+
+.ing-skipped-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 2px;
+  padding: var(--space-2) 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.ing-skipped-row:last-child {
+  border-bottom: 0;
+}
+
+.ing-skipped-name {
+  font-size: var(--t-small);
+  color: var(--fg);
+  overflow-wrap: anywhere;
+}
+
+.ing-skipped-why {
+  font-size: var(--t-small);
+  line-height: 1.45;
+  color: var(--dim);
+}
+
+.ing-fault {
+  flex: none;
+  padding: var(--space-2) var(--space-3);
+  box-shadow: inset 2px 0 0 var(--danger), inset 0 0 0 1px var(--line);
+  font-size: var(--t-small);
+  color: var(--danger);
+}
+
+.ingestor .sec-head {
+  box-sizing: border-box;
+  height: 31px;
+}
+
+.ing-cols {
+  flex: 1 1 auto;
+  min-height: 0;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) var(--panel-min);
+  gap: var(--space-3);
+}
+
+.ing-main,
+.ing-side {
+  min-width: 0;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.ing-databases {
+  flex: 0 1 auto;
+  max-height: 45%;
+}
+
+.ing-map {
+  flex: 1 1 auto;
+}
+
+.ing-name {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  min-width: 0;
+}
+
+.ing-name-text {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.ing-offer {
+  flex: none;
+  padding: 2px var(--space-1);
+  box-shadow: inset 0 0 0 1px var(--line-strong);
+  font-size: var(--t-micro);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--label);
+}
+
+.ing-databases > .sec-body {
+  flex: 1 1 auto;
+  padding: 0;
+}
+
+.ing-databases thead th {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.ing-cell-quiet {
+  color: var(--dim) !important;
+}
+
+.ing-summary {
+  flex: 0 0 auto;
+}
+
+.ing-files {
+  flex: 1 1 0;
+  min-height: 120px;
+}
+
+.ing-side .sec-body {
+  flex: 1 1 auto;
+}
+
+.ing-callout {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  margin: var(--space-2) 0 var(--space-1);
+  padding: var(--space-2) var(--space-3);
+  box-shadow: inset 2px 0 0 var(--danger), inset 0 0 0 1px var(--line);
+}
+
+.ing-callout .bp5-button {
+  flex: none;
+}
+
+.ing-callout p {
+  flex: 1 1 auto;
+  margin: 0;
+  font-size: var(--t-small);
+  line-height: 1.45;
+  color: var(--dim);
+}
+
+.ing-empty-note {
+  margin: var(--space-2) 0;
+  font-size: var(--t-small);
+  line-height: 1.45;
+  color: var(--dim);
+}
+
+.ing-empty-note.is-fault {
+  color: var(--danger);
+}
+
+.ing-link {
+  padding: 0;
+  border: 0;
+  background: none;
+  font: inherit;
+  color: var(--fg);
+  cursor: pointer;
+}
+
+.ing-link:hover {
+  text-decoration: underline;
+}
+
+.ing-file {
+  border-bottom: 1px solid var(--line);
+}
+
+.ing-file:last-child {
+  border-bottom: 0;
+}
+
+.ing-file > .row {
+  border-bottom: 0;
+}
+
+.ing-file-name {
+  font-size: var(--t-small);
+  color: var(--fg);
+}
+
+.ing-file-note {
+  margin-top: -2px;
+  padding: 0 0 var(--space-2);
+  font-size: var(--t-small);
+  line-height: 1.45;
+  color: var(--dim);
+}
+
+.ing-file-note.is-fault {
+  color: var(--danger);
+}
+
+.ing-map > .sec-body {
+  flex: 1 1 auto;
+  padding: var(--space-4) var(--space-4);
+}
+
+.map {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  column-gap: clamp(64px, 12%, 160px);
+  align-items: start;
+  max-width: 920px;
+  margin: 0 auto;
+}
+
+.map-col {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.map-links {
+  position: absolute;
+  inset: 0 auto auto 0;
+  overflow: visible;
+  pointer-events: none;
+}
+
+.map-link {
+  fill: none;
+  stroke: var(--label-dim);
+  stroke-width: 1.25;
+}
+
+.map-link--missing {
+  stroke: var(--danger);
+  stroke-dasharray: 5 4;
+}
+
+.map-links marker path {
+  fill: none;
+  stroke: context-stroke;
+  stroke-width: 1.25;
+}
+
+.map-card {
+  background: var(--raised);
+  box-shadow: inset 0 0 0 1px var(--line-strong);
+}
+
+.map-card--here {
+  box-shadow: inset 0 0 0 1px var(--fg);
+}
+
+.map-card--offer {
+  box-shadow: inset 0 0 0 1px var(--label);
+}
+
+.map-card--missing {
+  background: transparent;
+  box-shadow: none;
+  outline: 1px dashed color-mix(in srgb, var(--danger) 60%, transparent);
+  outline-offset: -1px;
+}
+
+.map-card-head {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  min-height: 24px;
+  padding: var(--space-2) var(--space-3) 0;
+}
+
+.map-card-title {
+  min-width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: var(--t-micro);
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--fg);
+}
+
+.map-card-head > :last-child:not(:first-child) {
+  margin-left: auto;
+}
+
+.map-card-note {
+  padding: var(--space-1) var(--space-3) 0;
+  font-size: var(--t-small);
+  color: var(--dim);
+}
+
+.map-card-head .map-card-note {
+  flex: none;
+  padding: 0;
+}
+
+.map-chips {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  padding: var(--space-3);
+}
+
+.map-chips--linked {
+  padding-left: var(--space-5);
+}
+
+.map-chip {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: var(--space-2) var(--space-3);
+  background: var(--panel);
+  box-shadow: inset 0 0 0 1px var(--line);
+}
+
+.map-chip--missing {
+  background: transparent;
+  box-shadow: inset 0 0 0 1px var(--line);
+}
+
+.map-chip-name {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: var(--t-body);
+  color: var(--fg);
+}
+
+.map-chip--missing .map-chip-name {
+  color: var(--dim);
+}
+
+.map-chip-meta {
+  font-family: var(--mono);
+  font-size: var(--t-small);
+  color: var(--dim);
+}
+
+.map-empty {
+  margin: 0;
+  font-size: var(--t-small);
+  line-height: 1.5;
+  color: var(--dim);
+}

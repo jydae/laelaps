@@ -1,0 +1,132 @@
+{
+  "data": [
+    {
+      "ObjectIdentifier": "S-1-5-21-4187502233-2849013567-771402918-1001",
+      "Properties": {
+        "name": "NG-DC01.NORTHGATE.LOCAL",
+        "domain": "NORTHGATE.LOCAL",
+        "domainsid": "S-1-5-21-4187502233-2849013567-771402918",
+        "distinguishedname": "CN=NG-DC01,OU=STAFF,DC=NORTHGATE,DC=LOCAL",
+        "enabled": true,
+        "isdc": true,
+        "unconstraineddelegation": false,
+        "operatingsystem": "Windows Server 2022 Standard"
+      },
+      "Aces": [],
+      "ContainedBy": {
+        "ObjectIdentifier": "A2A20000-0000-0000-0000-0000000000OU",
+        "ObjectType": "OU"
+      },
+      "PrimaryGroupSID": "S-1-5-21-4187502233-2849013567-771402918-516",
+      "LocalGroups": [],
+      "PrivilegedSessions": {
+        "Collected": true,
+        "Results": []
+      },
+      "RegistrySessions": {
+        "Collected": false,
+        "Results": []
+      },
+      "Sessions": {
+        "Collected": false,
+        "Results": []
+      },
+      "UserRights": [],
+      "AllowedToAct": [],
+      "AllowedToDelegate": [],
+      "HasSIDHistory": [],
+      "DumpSMSAPassword": []
+    },
+    {
+      "ObjectIdentifier": "S-1-5-21-4187502233-2849013567-771402918-1002",
+      "Properties": {
+        "name": "BUILD-07.NORTHGATE.LOCAL",
+        "domain": "NORTHGATE.LOCAL",
+        "domainsid": "S-1-5-21-4187502233-2849013567-771402918",
+        "distinguishedname": "CN=BUILD-07,OU=STAFF,DC=NORTHGATE,DC=LOCAL",
+        "enabled": true,
+        "isdc": false,
+        "unconstraineddelegation": false,
+        "operatingsystem": "Windows Server 2022 Standard"
+      },
+      "Aces": [
+        {
+          "PrincipalSID": "S-1-5-21-4187502233-2849013567-771402918-1202",
+          "PrincipalType": "User",
+          "RightName": "AddAllowedToAct",
+          "IsInherited": false
+        }
+      ],
+      "ContainedBy": {
+        "ObjectIdentifier": "A2A20000-0000-0000-0000-0000000000OU",
+        "ObjectType": "OU"
+      },
+      "PrimaryGroupSID": "S-1-5-21-4187502233-2849013567-771402918-515",
+      "LocalGroups": [],
+      "PrivilegedSessions": {
+        "Collected": true,
+        "Results": [
+          {
+            "UserSID": "S-1-5-21-4187502233-2849013567-771402918-1102"
+          }
+        ]
+      },
+      "RegistrySessions": {
+        "Collected": false,
+        "Results": []
+      },
+      "Sessions": {
+        "Collected": false,
+        "Results": []
+      },
+      "UserRights": [],
+      "AllowedToAct": [],
+      "AllowedToDelegate": [],
+      "HasSIDHistory": [],
+      "DumpSMSAPassword": []
+    },
+    {
+      "ObjectIdentifier": "S-1-5-21-4187502233-2849013567-771402918-1003",
+      "Properties": {
+        "name": "WS-04.NORTHGATE.LOCAL",
+        "domain": "NORTHGATE.LOCAL",
+        "domainsid": "S-1-5-21-4187502233-2849013567-771402918",
+        "distinguishedname": "CN=WS-04,OU=STAFF,DC=NORTHGATE,DC=LOCAL",
+        "enabled": true,
+        "isdc": false,
+        "unconstraineddelegation": false,
+        "operatingsystem": "Windows Server 2022 Standard"
+      },
+      "Aces": [],
+      "ContainedBy": {
+        "ObjectIdentifier": "A2A20000-0000-0000-0000-0000000000OU",
+        "ObjectType": "OU"
+      },
+      "PrimaryGroupSID": "S-1-5-21-4187502233-2849013567-771402918-515",
+      "LocalGroups": [],
+      "PrivilegedSessions": {
+        "Collected": true,
+        "Results": []
+      },
+      "RegistrySessions": {
+        "Collected": false,
+        "Results": []
+      },
+      "Sessions": {
+        "Collected": false,
+        "Results": []
+      },
+      "UserRights": [],
+      "AllowedToAct": [],
+      "AllowedToDelegate": [],
+      "HasSIDHistory": [],
+      "DumpSMSAPassword": []
+    }
+  ],
+  "meta": {
+    "type": "computers",
+    "count": 3,
+    "version": 6,
+    "methods": 0
+  }
+}
