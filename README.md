@@ -1,6 +1,5 @@
 <p align="center"><img src="logo.svg" width="138" alt=""></p>
 <h3 align="center">Laelaps</h3>
-<p align="center"><i>Know thy domain.</i></p>
 
 <br>
 
