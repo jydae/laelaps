@@ -43,6 +43,22 @@ record()   {
   { [ ! -f .env ] || sed "/^$1=/d" .env; printf '%s=%s\n' "$1" "$2"; } > "$tmp" && mv -f "$tmp" .env
 }
 recorded() { grep -q "^$1=" .env 2>/dev/null; }
+listening() { curl -s -m 2 -o /dev/null "http://127.0.0.1:$1/api/health" || [ $? -ne 7 ]; }   # curl 7 = connection refused = port free
+ask_port() {
+  [ -t 0 ] || return 0
+  local p
+  step "Which port should the console use?"
+  while :; do
+    read -r -p "  Port for the console (Enter for 8080): " p
+    p=${p:-8080}
+    case "$p" in
+      *[!0-9]*|'') note "'$p' is not a port number; use 1-65535." ;;
+      *) if [ "$p" -lt 1 ] || [ "$p" -gt 65535 ]; then note "$p is out of range; use 1-65535."
+         elif listening "$p"; then note "something already answers on port $p; pick another."
+         else PORT=$p; return; fi ;;
+    esac
+  done
+}
 
 ES_VERSION=${ES_VERSION:-8.18.0}
 ES_IMAGE="docker.elastic.co/elasticsearch/elasticsearch:$ES_VERSION"
@@ -284,10 +300,22 @@ case "$VERB" in
   restore)   restore "$@" ;;
   uninstall) uninstall ;;
   *)
-    recorded PORT || record PORT 8080; recorded ES_URL || record ES_URL "$ES_URL"
+    ask_port; export PORT
+    record PORT "$PORT"; recorded ES_URL || record ES_URL "$ES_URL"
     ensure_es; ensure_swift
     step "Building the server (release; incremental after the first time)"
     swift build -c release
-    step "Console: http://127.0.0.1:$PORT   (Ctrl-C stops it; Elasticsearch keeps running)"
-    exec .build/release/App ;;
+    step "Starting the console on port $PORT"
+    .build/release/App & app=$!
+    trap 'kill "$app" 2>/dev/null' EXIT
+    printf '  waiting for the console '
+    for _ in $(seq 1 60); do
+      listening "$PORT" && break
+      kill -0 "$app" 2>/dev/null || die "The server stopped before it answered; its message is above."
+      printf .; sleep 0.5
+    done
+    echo
+    listening "$PORT" || die "The server did not answer on port $PORT within 30 seconds."
+    printf '\n\033[1;32m✓ app running in http://127.0.0.1:%s/\033[0m   (Ctrl-C stops it; Elasticsearch keeps running)\n\n' "$PORT"
+    wait "$app" ;;
 esac
